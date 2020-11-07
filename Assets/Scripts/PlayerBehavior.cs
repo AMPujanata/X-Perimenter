@@ -8,10 +8,12 @@ public class PlayerBehavior : MonoBehaviour
     [SerializeField] private float _moveSpeed;
     private bool _isMoving;
     private Coroutine _currentMoveCoroutine;
+    private BoxCollider2D _2DCollider;
     void Awake()
     {
         _canMove = true;
         _isMoving = false;
+        _2DCollider = GetComponent<BoxCollider2D>();
     }
 
     // Start is called before the first frame update
@@ -23,7 +25,7 @@ public class PlayerBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-#if UNITY_EDITOR
+#if UNITY_EDITOR // mouse/editor controls
         if(_canMove && Input.GetMouseButtonDown(0))
         {
             if (_isMoving)
@@ -33,7 +35,7 @@ public class PlayerBehavior : MonoBehaviour
             _currentMoveCoroutine = StartCoroutine(MoveToLocation(convertedMousePosition.x, convertedMousePosition.y));
         }
 #endif
-#if !UNITY_EDITOR && UNITY_ANDROID
+#if !UNITY_EDITOR && UNITY_ANDROID //touch controls
         Debug.Log("Unity Android");
         if (_canMove && Input.touchCount > 0)
         {
@@ -54,14 +56,37 @@ public class PlayerBehavior : MonoBehaviour
     {
         _isMoving = true;
         Vector2 endPosition = new Vector2(xCoordinate, yCoordinate);
-        Debug.Log(endPosition);
-        while(Vector2.Distance(transform.position, endPosition) > 0.01f)
+        while(Vector2.Distance(transform.position, endPosition) > 0.01f) //slowly move to endPosition while not close enough
         {
             Vector2 currentPosition = new Vector2(transform.position.x, transform.position.y);
             transform.position = Vector2.MoveTowards(currentPosition, endPosition, _moveSpeed * Time.deltaTime);
             yield return null;
         }
+
+        CheckForInteraction();
         _isMoving = false;
         yield break;
+    }
+
+    public void CheckForInteraction() //currently only interacts with the first found object in the array
+    {
+        Collider2D[] overlap = Physics2D.OverlapAreaAll(_2DCollider.bounds.min, _2DCollider.bounds.max);
+        for (int i = 0; i < overlap.Length; i++)
+        {
+            if (overlap[i].gameObject == gameObject)
+                continue;
+
+            InteractionObject overlapInteraction;
+            overlapInteraction = overlap[i].gameObject.GetComponent<InteractionObject>();
+            if (overlapInteraction != null)
+            {
+                overlapInteraction.Interact();
+            }
+        }
+    }
+
+    public void ToggleMovement(bool shouldMove)
+    {
+        _canMove = shouldMove;
     }
 }
