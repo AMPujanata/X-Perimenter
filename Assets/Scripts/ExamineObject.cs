@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class ExamineObject : InteractionObject
 {
-    [SerializeField] private string[] _stateName; //not actually used; just for labelling the state an object is in
-    [SerializeField] private string[] _objectDescription; //the one actually displayed depends on the current state
-    [SerializeField] private int _currentState;
+
+    [TextArea][SerializeField] private string _objectDescription;
+    /*[SerializeField] private string[] _objectDescriptionState;
+    [SerializeField] private int _currentState;*/ //these two are for later when i have time to make objects with multiple switchable descriptions
     private PlayerBehavior _playerBehavior;
     private UIController _UIController;
     // Start is called before the first frame update
@@ -14,11 +15,21 @@ public class ExamineObject : InteractionObject
     {
         _playerBehavior = FindObjectOfType<PlayerBehavior>();
         _UIController = FindObjectOfType<UIController>();
+        if (_flagBearer)
+        {
+            FlagManager flagManager = FindObjectOfType<FlagManager>();
+            flagManager.AddLevelClearFlag(name, false);
+        }
     }
 
     public override void Interact()
     {
         _playerBehavior.ToggleMovement(false);
-        _UIController.OpenExamineDialog(name, _objectDescription[0]);
+        _UIController.OpenExamineDialog(name, _objectDescription); //this will eventually get changed to be able to call a specific description
+        if (_flagBearer)
+        {
+            FlagManager flagManager = FindObjectOfType<FlagManager>();
+            flagManager.ActivateLevelClearFlag(name);
+        }
     }
 }

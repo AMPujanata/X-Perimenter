@@ -87,6 +87,12 @@ public class PlayerBehavior : MonoBehaviour
 
     public void ToggleMovement(bool shouldMove)
     {
+        if (shouldMove)
+        {
+            FlagManager flagManager = FindObjectOfType<FlagManager>();
+            if(flagManager.CheckLevelClearFlags()) //DO NOT let this stay here move it to a better trigger once prototype is over
+                return;
+        }
         _canMove = shouldMove;
     }
 }
