@@ -9,6 +9,7 @@ public class PlayerBehavior : MonoBehaviour
     private bool _isMoving;
     private Coroutine _currentMoveCoroutine;
     private BoxCollider2D _2DCollider;
+    [SerializeField] private FixedJoystick _joystick;
     void Awake()
     {
         _canMove = true;
@@ -25,7 +26,7 @@ public class PlayerBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-#if UNITY_EDITOR // mouse/editor controls
+/*#if UNITY_EDITOR // mouse/editor controls
         if(_canMove && Input.GetMouseButtonDown(0))
         {
             if (_isMoving)
@@ -49,10 +50,15 @@ public class PlayerBehavior : MonoBehaviour
                _currentMoveCoroutine = StartCoroutine(MoveToLocation(convertedTouchPosition.x, convertedTouchPosition.y));
             }
         }
-#endif
+#endif*/
+        if(_canMove)
+        {
+            transform.position += Vector3.right * _joystick.Horizontal * _moveSpeed * Time.deltaTime;
+            transform.position += Vector3.up * _joystick.Vertical * _moveSpeed * Time.deltaTime;
+        }
     }
 
-    IEnumerator MoveToLocation(float xCoordinate, float yCoordinate)
+    /*IEnumerator MoveToLocation(float xCoordinate, float yCoordinate)
     {
         _isMoving = true;
         Vector2 endPosition = new Vector2(xCoordinate, yCoordinate);
@@ -66,7 +72,7 @@ public class PlayerBehavior : MonoBehaviour
         CheckForInteraction();
         _isMoving = false;
         yield break;
-    }
+    }*/
 
     public void CheckForInteraction() //currently only interacts with the first found object in the array
     {
@@ -85,14 +91,15 @@ public class PlayerBehavior : MonoBehaviour
         }
     }
 
+    public void FinishExamine()
+    {
+        FlagManager flagManager = FindObjectOfType<FlagManager>();
+        if(flagManager.CheckLevelClearFlags()) //DO NOT let this stay here move it to a better trigger once prototype is over
+            return;
+        ToggleMovement(true);
+    }
     public void ToggleMovement(bool shouldMove)
     {
-        if (shouldMove)
-        {
-            FlagManager flagManager = FindObjectOfType<FlagManager>();
-            if(flagManager.CheckLevelClearFlags()) //DO NOT let this stay here move it to a better trigger once prototype is over
-                return;
-        }
         _canMove = shouldMove;
     }
 }
