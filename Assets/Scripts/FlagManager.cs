@@ -1,41 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
+using UnityEngine.Events;
+using System;
+
+[Serializable]
+public struct Flag
+{
+    public string _dontChangeThis;
+    public string FlagName;
+    public string HowToActivateFlag;
+    public bool IsFlagAchieved;
+    public UnityEvent AfterFlagActivated;
+}
 
 public class FlagManager : MonoBehaviour
 {
-    private Dictionary<string, bool> _levelClearFlags;
-    [SerializeField] private GameObject _finishInvestigationButton;
-    private void Awake()
-    {
-        _levelClearFlags = new Dictionary<string, bool>();
-    }
+    [SerializeField] private Flag[] _flags;
 
-
-    public void AddLevelClearFlag(string key, bool value)
+    public void ActivateFlag(int index)
     {
-        _levelClearFlags.Add(key, value);
-    }
-
-    public void ActivateLevelClearFlag(string key)
-    {
-        _levelClearFlags[key] = true;
-    }
-
-    public bool CheckLevelClearFlags()
-    {
-        foreach(var KeyValuePair in _levelClearFlags)
+        if (!_flags[index].IsFlagAchieved)
         {
-            if (!KeyValuePair.Value)
-            {
-                Debug.Log("One flag wasn't set. Returning...");
-                return false;
-            }
+            _flags[index].IsFlagAchieved = true;
+            _flags[index].AfterFlagActivated.Invoke();
         }
-        Debug.Log("All flags cleared!");
-        _finishInvestigationButton.SetActive(true); //might change this to a unity event in the future
-        return true;
     }
-
 }

@@ -94,8 +94,8 @@ public class PlayerBehavior : MonoBehaviour
     public void FinishExamine()
     {
         FlagManager flagManager = FindObjectOfType<FlagManager>();
-        if(flagManager.CheckLevelClearFlags()) //DO NOT let this stay here move it to a better trigger once prototype is over
-            return;
+        //if(flagManager.CheckLevelClearFlags()) //DO NOT let this stay here move it to a better trigger once prototype is over
+        //    return;
         ToggleMovement(true);
     }
     public void ToggleMovement(bool shouldMove)
