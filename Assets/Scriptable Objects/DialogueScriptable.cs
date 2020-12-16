@@ -4,9 +4,9 @@ using UnityEngine;
 using System;
 
 
-public enum Orientation
+public enum FlagType
 {
-    LEFT, RIGHT
+    NONE, IMMEDIATE, AFTER
 }
 
 [Serializable]
@@ -14,8 +14,8 @@ public struct Line
 {
     public string _dontEditThis;
     public string SpeakerName;
-    public Sprite SpeakerSprite;
-    public Orientation SpeakerOrientation;
+    //public Sprite SpeakerSprite;
+    //public Orientation SpeakerOrientation;
     [TextArea] public string SpeakerLine;
 }
 
@@ -26,5 +26,6 @@ public class DialogueScriptable : ScriptableObject
     public Line[] Lines;
     public ChoiceScriptable _nextChoice;
     public DialogueScriptable _nextDialogue;
-    public bool ShouldTriggerAfterDialogueEvent;
+    public FlagType _flagType;
+    public int _flagIndex;
 }

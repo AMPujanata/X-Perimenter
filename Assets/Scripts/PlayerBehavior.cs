@@ -6,73 +6,51 @@ public class PlayerBehavior : MonoBehaviour
 {
     private bool _canMove;
     [SerializeField] private float _moveSpeed;
-    private bool _isMoving;
-    private Coroutine _currentMoveCoroutine;
     private BoxCollider2D _2DCollider;
     [SerializeField] private FixedJoystick _joystick;
+    [SerializeField] private BoxCollider2D _currentBound;
+    private float _boundLeft;
+    private float _boundRight;
+    private float _boundUp;
+    private float _boundDown;
+    private float _2DColliderBoundLeft;
+    private float _2DColliderBoundRight;
+    private float _2DColliderBoundUp;
+    private float _2DColliderBoundDown;
     void Awake()
     {
         _canMove = true;
-        _isMoving = false;
         _2DCollider = GetComponent<BoxCollider2D>();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+        _boundLeft = _currentBound.bounds.min.x;
+        _boundRight = _currentBound.bounds.max.x;
+        _boundUp = _currentBound.bounds.max.y;
+        _boundDown = _currentBound.bounds.min.y;
+        _2DColliderBoundLeft = _2DCollider.bounds.min.x;
+        _2DColliderBoundRight = _2DCollider.bounds.max.x;
+        _2DColliderBoundUp = _2DCollider.bounds.max.y;
+        _2DColliderBoundDown = _2DCollider.bounds.min.y;
     }
 
     // Update is called once per frame
     void Update()
     {
-/*#if UNITY_EDITOR // mouse/editor controls
-        if(_canMove && Input.GetMouseButtonDown(0))
-        {
-            if (_isMoving)
-                StopCoroutine(_currentMoveCoroutine);
-
-            Vector3 convertedMousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
-            _currentMoveCoroutine = StartCoroutine(MoveToLocation(convertedMousePosition.x, convertedMousePosition.y));
-        }
-#endif
-#if !UNITY_EDITOR && UNITY_ANDROID //touch controls
-        Debug.Log("Unity Android");
-        if (_canMove && Input.touchCount > 0)
-        {
-            if(Input.GetTouch(0).phase == TouchPhase.Began || Input.GetTouch(0).phase == TouchPhase.Moved)
-            {
-                if(_isMoving)
-                    StopCoroutine(_currentMoveCoroutine);
-
-                Vector2 touchPosition = Input.GetTouch(0).position;
-                Vector3 convertedTouchPosition = Camera.main.ScreenToWorldPoint(new Vector3(touchPosition.x, touchPosition.y, Camera.main.nearClipPlane));
-               _currentMoveCoroutine = StartCoroutine(MoveToLocation(convertedTouchPosition.x, convertedTouchPosition.y));
-            }
-        }
-#endif*/
         if(_canMove)
         {
             transform.position += Vector3.right * _joystick.Horizontal * _moveSpeed * Time.deltaTime;
             transform.position += Vector3.up * _joystick.Vertical * _moveSpeed * Time.deltaTime;
+            Vector3 position = transform.position;
+            //code for not moving out of bounds here
+            if (position.x < _boundLeft - _2DColliderBoundLeft)
+                position.x = _boundLeft - _2DColliderBoundLeft;
+            else if (position.x > _boundRight - _2DColliderBoundRight)
+                position.x = _boundRight - _2DColliderBoundRight;
+            if (position.y < _boundDown - _2DColliderBoundDown)
+                position.y = _boundDown - _2DColliderBoundDown;
+            else if (position.y > _boundUp - _2DColliderBoundUp)
+                position.y = _boundUp - _2DColliderBoundUp;
+            transform.position = position;
         }
     }
-
-    /*IEnumerator MoveToLocation(float xCoordinate, float yCoordinate)
-    {
-        _isMoving = true;
-        Vector2 endPosition = new Vector2(xCoordinate, yCoordinate);
-        while(Vector2.Distance(transform.position, endPosition) > 0.01f) //slowly move to endPosition while not close enough
-        {
-            Vector2 currentPosition = new Vector2(transform.position.x, transform.position.y);
-            transform.position = Vector2.MoveTowards(currentPosition, endPosition, _moveSpeed * Time.deltaTime);
-            yield return null;
-        }
-
-        CheckForInteraction();
-        _isMoving = false;
-        yield break;
-    }*/
 
     public void CheckForInteraction() //currently only interacts with the first found object in the array
     {
@@ -91,15 +69,17 @@ public class PlayerBehavior : MonoBehaviour
         }
     }
 
-    public void FinishExamine()
-    {
-        FlagManager flagManager = FindObjectOfType<FlagManager>();
-        //if(flagManager.CheckLevelClearFlags()) //DO NOT let this stay here move it to a better trigger once prototype is over
-        //    return;
-        ToggleMovement(true);
-    }
     public void ToggleMovement(bool shouldMove)
     {
         _canMove = shouldMove;
+    }
+
+    public void SetBounds(BoxCollider2D bound)
+    {
+        _currentBound = bound;
+        _boundLeft = _currentBound.bounds.min.x;
+        _boundRight = _currentBound.bounds.max.x;
+        _boundUp = _currentBound.bounds.max.y;
+        _boundDown = _currentBound.bounds.min.y;
     }
 }

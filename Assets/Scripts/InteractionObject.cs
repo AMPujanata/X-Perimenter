@@ -23,4 +23,9 @@ public class InteractionObject : MonoBehaviour
     {
         _states[_stateIndex]._interactionEvent.Invoke();
     }
+
+    public void SwitchState(int stateIndex)
+    {
+        _stateIndex = stateIndex;
+    }
 }

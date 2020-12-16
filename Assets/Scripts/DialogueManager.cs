@@ -12,15 +12,22 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Text _dialogueText;
     [SerializeField] private GameObject _choiceDialogueContainer;
     [SerializeField] private Button[] _choiceTextButtons;
+    private List<int> _flagsToTriggerAfter;
     private DialogueScriptable _currentDialogue;
     private int currentIndex;
 
+	void Start()
+	{
+		_flagsToTriggerAfter = new List<int>();
+	}
+	
     public void SetupDialogue(DialogueScriptable dialogueFormat)
     {
         FindObjectOfType<GeneralGameManager>().ToggleGameUI(false);
+        FindObjectOfType<PlayerBehavior>().ToggleMovement(false);
         _currentDialogue = dialogueFormat;
         currentIndex = 0;
-        _speakerSprite.sprite = _currentDialogue.Lines[currentIndex].SpeakerSprite;
+        //_speakerSprite.sprite = _currentDialogue.Lines[currentIndex].SpeakerSprite;
         _speakerNameText.text = _currentDialogue.Lines[currentIndex].SpeakerName;
         _dialogueText.text = _currentDialogue.Lines[currentIndex].SpeakerLine;
         _parentDialogueContainer.SetActive(true);
@@ -32,7 +39,7 @@ public class DialogueManager : MonoBehaviour
         if (currentIndex  < _currentDialogue.Lines.Length - 1)
         {
             currentIndex++;
-            _speakerSprite.sprite = _currentDialogue.Lines[currentIndex].SpeakerSprite; //expand this later to autofit image ratio
+            //_speakerSprite.sprite = _currentDialogue.Lines[currentIndex].SpeakerSprite;
             _speakerNameText.text = _currentDialogue.Lines[currentIndex].SpeakerName;
             _dialogueText.text = _currentDialogue.Lines[currentIndex].SpeakerLine;
         }
@@ -40,6 +47,15 @@ public class DialogueManager : MonoBehaviour
         {
             if (_choiceDialogueContainer.activeSelf)
                 return;
+            if(_currentDialogue._flagType == FlagType.IMMEDIATE)
+            {
+                FlagManager flagManager = GetComponent<FlagManager>();
+                flagManager.ActivateFlag(_currentDialogue._flagIndex);
+            }
+            else if(_currentDialogue._flagType == FlagType.AFTER)
+            {
+                _flagsToTriggerAfter.Add(_currentDialogue._flagIndex);
+            }
             if (_currentDialogue._nextChoice)
             {
                 SetupChoiceDialogue(_currentDialogue._nextChoice);
@@ -50,9 +66,19 @@ public class DialogueManager : MonoBehaviour
             }
             else
             {
+                FlagManager flagManager = GetComponent<FlagManager>();
+				if(_flagsToTriggerAfter.Count != 0)
+				{
+					foreach(int flagToAdd in _flagsToTriggerAfter)
+					{
+						flagManager.ActivateFlag(_currentDialogue._flagIndex);
+					}
+					_flagsToTriggerAfter.Clear();
+				}
                 _dialogueContainer.SetActive(false);
                 _parentDialogueContainer.SetActive(false);
                 FindObjectOfType<GeneralGameManager>().ToggleGameUI(true);
+                FindObjectOfType<PlayerBehavior>().ToggleMovement(true);
             }
         }
     }
