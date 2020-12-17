@@ -10,17 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
-  m_Name: BapakInitial
+  m_Name: DoorsBeforeEating
   m_EditorClassIdentifier: 
-  DialogueName: Bapak Initial
+  DialogueName: KitchenDoorBeforeEating
   Lines:
   - _dontEditThis: 
-    SpeakerName: Bapak
-    SpeakerLine: Halo, selamat siang. Anda siapa, ya?
-  - _dontEditThis: 
-    SpeakerName: Bapak
-    SpeakerLine: Oh, kamu ingin menjenguk <<nama anak>>? Dia ada di dalam kamarnya.
+    SpeakerName: Detektif
+    SpeakerLine: (<i>Sebaiknya saya tidak pindah-pindah kalau tidak perlu.</i>)
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
-  _flagType: 1
+  _flagType: 0
   _flagIndex: 0

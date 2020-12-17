@@ -10,18 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
-  m_Name: FrontDoorUnlockByBapak
+  m_Name: BaksoAfterEating
   m_EditorClassIdentifier: 
-  DialogueName: FrontDoorUnlockByBapak
+  DialogueName: BaksoAfterEat
   Lines:
   - _dontEditThis: 
-    SpeakerName: Bapak
-    SpeakerLine: Silahkan, mari saya buka pintunya.
-  - _dontEditThis: 
-    SpeakerName: 
-    SpeakerLine: -Bapak rumah memasukkan kuncinya ke dalam pintu, dan memutarnya.
-      Anda mendengar suara 'klik'.-
+    SpeakerName: Detektif
+    SpeakerLine: (<i>Sudah, jangan lagi. Kalau saya makan lagi, saya bisa mual.</i>)
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
-  _flagType: 1
-  _flagIndex: 1
+  _flagType: 0
+  _flagIndex: 0
