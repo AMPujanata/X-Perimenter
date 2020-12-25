@@ -15,16 +15,22 @@ public class DialogueManager : MonoBehaviour
     private List<int> _flagsToTriggerAfter;
     private DialogueScriptable _currentDialogue;
     private int currentIndex;
-
+    private GeneralGameManager _generalGameManager;
+    private PlayerBehavior _playerBehavior;
+    private FixedJoystick _fixedJoystick;
 	void Start()
 	{
+        _generalGameManager = FindObjectOfType<GeneralGameManager>();
+        _playerBehavior = FindObjectOfType<PlayerBehavior>();
+        _fixedJoystick = FindObjectOfType<FixedJoystick>();
 		_flagsToTriggerAfter = new List<int>();
 	}
 	
     public void SetupDialogue(DialogueScriptable dialogueFormat)
     {
-        FindObjectOfType<GeneralGameManager>().ToggleGameUI(false);
-        FindObjectOfType<PlayerBehavior>().ToggleMovement(false);
+        _generalGameManager.ToggleGameUI(false);
+        _playerBehavior.ToggleMovement(false);
+        _fixedJoystick.ResetInput();
         _currentDialogue = dialogueFormat;
         currentIndex = 0;
         //_speakerSprite.sprite = _currentDialogue.Lines[currentIndex].SpeakerSprite;
@@ -77,8 +83,9 @@ public class DialogueManager : MonoBehaviour
 				}
                 _dialogueContainer.SetActive(false);
                 _parentDialogueContainer.SetActive(false);
-                FindObjectOfType<GeneralGameManager>().ToggleGameUI(true);
-                FindObjectOfType<PlayerBehavior>().ToggleMovement(true);
+                _generalGameManager.ToggleGameUI(true);
+                _playerBehavior.ToggleMovement(true);
+                _fixedJoystick.ResetInput();
             }
         }
     }

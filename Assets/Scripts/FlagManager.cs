@@ -16,8 +16,8 @@ public struct Flag
 
 public class FlagManager : MonoBehaviour
 {
+    [SerializeField] private ObjectiveManager _objectiveManager;
     [SerializeField] private Flag[] _flags;
-
     public void ActivateFlag(int index)
     {
         if (!_flags[index].IsFlagAchieved)
@@ -25,5 +25,11 @@ public class FlagManager : MonoBehaviour
             _flags[index].IsFlagAchieved = true;
             _flags[index].AfterFlagActivated.Invoke();
         }
+        _objectiveManager.CheckCurrentObjective();
+    }
+
+    public bool GetFlagBool(int index)
+    {
+        return _flags[index].IsFlagAchieved;
     }
 }

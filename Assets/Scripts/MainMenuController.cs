@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
+
+    void Start()
+    {
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
+    }
+
     public void LoadLevel(string levelName) //used when passing only the scene's name into the method
     {
         //add any extra setup before load scene

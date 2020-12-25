@@ -20,7 +20,7 @@ MonoBehaviour:
       biasanya.</i>)
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: (<i>Apakah mungkin ada bahan yang menyebabkan itu...?</i>)
+    SpeakerLine: (<i>Mungkin ada bahan yang membuat bakso tersebut lebih kenyal...?</i>)
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
   _flagType: 1

@@ -19,7 +19,7 @@ MonoBehaviour:
     SpeakerLine: Halo, selamat siang. Anda siapa, ya?
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: Saya ingin menjenguk <<nama anak>>. Dia masih sakit, tidak?
+    SpeakerLine: Saya ingin menjenguk <<nama anak>>. Dia masih sakit, ya?
   - _dontEditThis: 
     SpeakerName: Bapak
     SpeakerLine: Dia masih sakit, sih. Tapi seharusnya dia sudah cukup sembuh.

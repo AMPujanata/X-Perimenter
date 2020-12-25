@@ -18,9 +18,6 @@ MonoBehaviour:
     SpeakerName: Detektif
     SpeakerLine: Kulkas ini penuh bahan-bahan untuk makanan. Semuanya terlihat masih
       segar, dan tidak basi.
-  - _dontEditThis: 
-    SpeakerName: Detektif
-    SpeakerLine: ...Jadi ingin makan. Tapi saya tidak nafsu lagi setelah bakso itu.
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
   _flagType: 0
