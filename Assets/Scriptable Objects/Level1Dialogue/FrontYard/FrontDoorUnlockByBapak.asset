@@ -20,7 +20,7 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: 
     SpeakerLine: -Bapak rumah memasukkan kuncinya ke dalam pintu, dan memutarnya.
-      Anda mendengar suara 'klik'.-
+      Saya mendengar suara 'klik'.-
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
   _flagType: 1

@@ -30,7 +30,6 @@ public class DialogueManager : MonoBehaviour
     {
         _generalGameManager.ToggleGameUI(false);
         _playerBehavior.ToggleMovement(false);
-        _fixedJoystick.ResetInput();
         _currentDialogue = dialogueFormat;
         currentIndex = 0;
         //_speakerSprite.sprite = _currentDialogue.Lines[currentIndex].SpeakerSprite;
@@ -85,7 +84,6 @@ public class DialogueManager : MonoBehaviour
                 _parentDialogueContainer.SetActive(false);
                 _generalGameManager.ToggleGameUI(true);
                 _playerBehavior.ToggleMovement(true);
-                _fixedJoystick.ResetInput();
             }
         }
     }

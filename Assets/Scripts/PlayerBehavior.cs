@@ -44,10 +44,10 @@ public class PlayerBehavior : MonoBehaviour
                 position.x = _boundLeft - _2DColliderBoundLeft;
             else if (position.x > _boundRight - _2DColliderBoundRight)
                 position.x = _boundRight - _2DColliderBoundRight;
-            if (position.y < _boundDown - _2DColliderBoundDown)
-                position.y = _boundDown - _2DColliderBoundDown;
-            else if (position.y > _boundUp - _2DColliderBoundUp)
-                position.y = _boundUp - _2DColliderBoundUp;
+            if (position.y < _boundDown - _2DColliderBoundUp) // ???? why doesnt it work with bound down? i hate this holy shit
+                position.y = _boundDown - _2DColliderBoundUp;
+            else if (position.y > _boundUp + _2DColliderBoundUp)
+                position.y = _boundUp + _2DColliderBoundUp;
             transform.position = position;
         }
     }
@@ -72,6 +72,7 @@ public class PlayerBehavior : MonoBehaviour
     public void ToggleMovement(bool shouldMove)
     {
         _canMove = shouldMove;
+        _joystick.ResetInput();
     }
 
     public void SetBounds(BoxCollider2D bound)

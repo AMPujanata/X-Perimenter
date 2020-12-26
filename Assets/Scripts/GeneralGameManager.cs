@@ -13,6 +13,7 @@ public class GeneralGameManager : MonoBehaviour
     private bool _gameUICanvasWasActive;
     private bool _dialogueCanvasWasActive;
     private float _previousTimeScale;
+	private float _previousDeltaScale;
     private PlayerBehavior _player;
     private CameraController _camera;
     // Start is called before the first frame update
@@ -36,6 +37,7 @@ public class GeneralGameManager : MonoBehaviour
         _dialogueCanvas.SetActive(false);
         _pauseCanvas.SetActive(true);
         _previousTimeScale = Time.timeScale;
+		_previousDeltaScale = Time.fixedDeltaTime;
         Time.timeScale = 0f;
         Time.fixedDeltaTime = 0f;
     }
@@ -46,16 +48,18 @@ public class GeneralGameManager : MonoBehaviour
         _dialogueCanvas.SetActive(_dialogueCanvasWasActive);
         _pauseCanvas.SetActive(false);
         Time.timeScale = _previousTimeScale;
-        Time.fixedDeltaTime = _previousTimeScale;
+        Time.fixedDeltaTime = _previousDeltaScale;
     }
 
     public void BackToMainMenu()
     {
+		Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
 
     public void RestartLevel()
     {
+		Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -79,5 +83,6 @@ public class GeneralGameManager : MonoBehaviour
         _player.transform.position = teleportPointTransform.position;
         _player.SetBounds(teleportPoint.GetBound());
         _camera.SetBounds(teleportPoint.GetBound());
+		_player.ToggleMovement(true);
     }
 }

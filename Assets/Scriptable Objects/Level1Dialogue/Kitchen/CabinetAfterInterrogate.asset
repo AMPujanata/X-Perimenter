@@ -10,32 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
-  m_Name: IbuAfterExamination
+  m_Name: CabinetAfterInterrogate
   m_EditorClassIdentifier: 
-  DialogueName: 
+  DialogueName: CabinetAfterInterogate
   Lines:
   - _dontEditThis: 
-    SpeakerName: Ibu
-    SpeakerLine: Sudah selesai makan?
+    SpeakerName: Detektif
+    SpeakerLine: (<i>Garam merk berbeda ini memang terlihat seperti tempelan... apakah
+      bisa saya lepas?</i>)
+  - _dontEditThis: 
+    SpeakerName: 
+    SpeakerLine: -Setelah mencoba melepaskan label merk, ditemukan label baru dibawahnya.-
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: Sudah, bu. Tapi tadi rasanya beda... ibu tadi gunakan bahan spesial,
-      tidak?
-  - _dontEditThis: 
-    SpeakerName: Ibu
-    SpeakerLine: Beda rasa? Saya hanya memakai bahan yang biasa, kok.
+    SpeakerLine: Bo... rax?
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: Tadi saya melihat-lihat di dapur dan menemukan garam banyak. Beberapa
-      ada yang tempelan.
+    SpeakerLine: (<i>Tunggu, ini bahan untuk campuran bahan industri non-makanan!
+      Kenapa ada di sini?</i>)
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: Ibu dapatkan garam itu dari mana?
-  - _dontEditThis: 
-    SpeakerName: Ibu
-    SpeakerLine: 'Hah? Masa sih? Saya hanya beli dari pasar, sama seperti garam pada
-      umumnya. '
+    SpeakerLine: (<i>Sebaiknya aku kasih tahu ibu lagi. Sepertinya aku menemukan
+      akibat keracunan anaknya...</i>)
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
   _flagType: 1
-  _flagIndex: 5
+  _flagIndex: 6
