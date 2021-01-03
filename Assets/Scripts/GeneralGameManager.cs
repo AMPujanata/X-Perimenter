@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class GeneralGameManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GeneralGameManager : MonoBehaviour
     [SerializeField] private GameObject _dialogueCanvas;
     [SerializeField] private GameObject _gameOverCanvas;
     [SerializeField] private GameObject _levelClearCanvas;
+    [SerializeField] private UnityEvent _startOfLevelEvent;
     private bool _gameUICanvasWasActive;
     private bool _dialogueCanvasWasActive;
     private float _previousTimeScale;
@@ -22,6 +24,15 @@ public class GeneralGameManager : MonoBehaviour
         _gameUICanvasWasActive = true;
         _player = FindObjectOfType<PlayerBehavior>();
         _camera = FindObjectOfType<CameraController>();
+        //code for loading game here from playerprefs
+        if(PlayerPrefs.GetInt("ShouldLoadData", 0) == 1)
+        {
+            PlayerPrefs.SetInt("ShouldLoadData", 0);
+            SaveManager saveManager = FindObjectOfType<SaveManager>();
+            saveManager.LoadGame();
+        }
+        else
+            _startOfLevelEvent.Invoke();
     }
 
     public void ToggleGameUI(bool validity)

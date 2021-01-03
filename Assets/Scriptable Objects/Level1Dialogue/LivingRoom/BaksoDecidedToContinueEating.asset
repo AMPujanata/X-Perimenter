@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: BaksoDecidedToContinueEating
+  m_EditorClassIdentifier: 
+  DialogueName: CabinetDecidedDoNothing
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: (<i>Ah, biarinlah. Paling hanya bumbu spesial ibu itu. Mungkin aku
+      akan lebih terbiasa setelah...</i>)
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: (<i>...ugh, perutku kenapa sakit? Serasanya seperti makin sakit
+      tiap kali aku bernafas...</i>
+  - _dontEditThis: 
+    SpeakerName: 
+    SpeakerLine: -Badanku mulai memanas secara cepat. Kepalaku terasa seperti mau
+      pecah, dan aku terasa seperti mual.-
+  - _dontEditThis: 
+    SpeakerName: 
+    SpeakerLine: -Badan saya ambruk, dan mata saya tertutup, Yang terakhir saya ingat...-
+  _nextChoice: {fileID: 0}
+  _nextDialogue: {fileID: 11400000, guid: 3d0456ee915c0cc409bb529a8292a2ab, type: 2}
+  _flagType: 0
+  _flagIndex: 0

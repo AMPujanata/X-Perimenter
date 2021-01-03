@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: StartingNarration
+  m_EditorClassIdentifier: 
+  DialogueName: StartingNarration
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Ah, sepertinya aku sudah sampai di rumahnya.
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: ...Sudah beberapa hari setelah <nama anak> sakit. Kedua orang tuanya
+      saat itu sibuk, sehingga tidak bisa mengurusnya. Baru hari ini mereka senggang.
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Dari yang saya dengar dari orang sekitar, dia mengalami gejala mual,
+      demam, sakit tenggorokan, diare, dan sesak napas.
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Setelah dicek ke dokter, dokter bilang bahwa dia keracunan makanan.
+      Ah, mungkin gara-gara <nama anak> gak menjaga kebersihan saat makan.
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Kasihan sekali, dia. Sebaiknya aku menjenguk selagi menghiburnya.
+  _nextChoice: {fileID: 0}
+  _nextDialogue: {fileID: 0}
+  _flagType: 0
+  _flagIndex: 0

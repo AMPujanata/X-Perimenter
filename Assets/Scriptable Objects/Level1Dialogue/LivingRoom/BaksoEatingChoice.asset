@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BaksoEatingChoice
   m_EditorClassIdentifier: 
   Choices:
-  - ChoiceText: Lanjut makan
+  - ChoiceText: Makan bakso
     NextDialogue: {fileID: 11400000, guid: 2fa7375d650f78f4091666f83050e9d2, type: 2}
     ShouldTriggerAfterDialogueEvent: 0
   - ChoiceText: Cek secara mendalam

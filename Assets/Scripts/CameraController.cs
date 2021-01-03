@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
 {
     [SerializeField] private Transform _playerTransform;
     [SerializeField] private Vector3 _offset;
-    [SerializeField] private BoxCollider2D _currentBound;
+    [SerializeField] private BoxCollider2D _startingBound;
     private float _aspect;
     private float _orthographicSize;
     private float _boundLeft;
@@ -18,10 +18,7 @@ public class CameraController : MonoBehaviour
     {
         _aspect = Camera.main.aspect;
         _orthographicSize = Camera.main.orthographicSize;
-        _boundLeft = _currentBound.bounds.min.x;
-        _boundRight = _currentBound.bounds.max.x;
-        _boundUp = _currentBound.bounds.max.y;
-        _boundDown = _currentBound.bounds.min.y;
+        SetBounds(_startingBound);
     }
 
     void LateUpdate()
@@ -42,10 +39,9 @@ public class CameraController : MonoBehaviour
 
     public void SetBounds(BoxCollider2D bound)
     {
-        _currentBound = bound;
-        _boundLeft = _currentBound.bounds.min.x;
-        _boundRight = _currentBound.bounds.max.x;
-        _boundUp = _currentBound.bounds.max.y;
-        _boundDown = _currentBound.bounds.min.y;
+        _boundLeft = bound.bounds.min.x;
+        _boundRight = bound.bounds.max.x;
+        _boundUp = bound.bounds.max.y;
+        _boundDown = bound.bounds.min.y;
     }
 }

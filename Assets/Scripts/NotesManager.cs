@@ -9,6 +9,7 @@ public class NotesManager : MonoBehaviour
     [SerializeField] private GameObject[] _notePrefabs;
     [SerializeField] private GameObject _prevButton;
     [SerializeField] private GameObject _nextButton;
+    [SerializeField] private Image _newNoteAvailableImage;
     [SerializeField] private List<string> _notes;
     private int _notesPerPage;
     private int _pageCount;
@@ -81,5 +82,16 @@ public class NotesManager : MonoBehaviour
     public void AddNote(string noteContent)
     {
         _notes.Add(noteContent);
+        _newNoteAvailableImage.gameObject.SetActive(true);
+    }
+
+    public void SetNotes(List<string> tempNotes)
+    {
+        _notes = tempNotes;
+    }
+
+    public List<string> GetNotes()
+    {
+        return _notes;
     }
 }

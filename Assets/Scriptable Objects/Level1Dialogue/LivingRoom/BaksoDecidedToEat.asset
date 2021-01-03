@@ -19,9 +19,9 @@ MonoBehaviour:
     SpeakerLine: (<i>Baksonya masih enak, tapi susah ditelan...</i>)
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: (<i>..ugh, saya merasa seperti sakit perut. Sebaiknya saya tidak
-      lanjut makan...</i>)
-  _nextChoice: {fileID: 0}
+    SpeakerLine: (<i>...ugh, saya merasa agak tidak enak. Apakah sebaiknya saya tidak
+      makan lagi?</i>)
+  _nextChoice: {fileID: 11400000, guid: 713173acb66d4ad43ad0b685848aeccb, type: 2}
   _nextDialogue: {fileID: 0}
-  _flagType: 1
-  _flagIndex: 3
+  _flagType: 0
+  _flagIndex: 0

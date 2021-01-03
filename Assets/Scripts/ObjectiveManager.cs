@@ -100,4 +100,10 @@ public class ObjectiveManager : MonoBehaviour
         }
         _objectiveText.text = temporaryObjectiveText;
     }
+
+    public int GetObjectiveIndex()
+    {
+        return _objectiveIndex;
+    }
+
 }

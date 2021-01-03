@@ -32,4 +32,10 @@ public class FlagManager : MonoBehaviour
     {
         return _flags[index].IsFlagAchieved;
     }
+
+    public Flag[] GetFlags()
+    {
+        return _flags;
+    }
+
 }

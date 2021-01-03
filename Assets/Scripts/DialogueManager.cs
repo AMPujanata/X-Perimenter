@@ -18,7 +18,7 @@ public class DialogueManager : MonoBehaviour
     private GeneralGameManager _generalGameManager;
     private PlayerBehavior _playerBehavior;
     private FixedJoystick _fixedJoystick;
-	void Start()
+	void Awake()
 	{
         _generalGameManager = FindObjectOfType<GeneralGameManager>();
         _playerBehavior = FindObjectOfType<PlayerBehavior>();
