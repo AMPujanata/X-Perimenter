@@ -26,6 +26,7 @@ public class SaveManager : MonoBehaviour
     private SaveData _currentSaveData;
     private string _savePath;
     [SerializeField] private PlayerBehavior _playerBehavior;
+    [SerializeField] private CameraController _cameraController;
     [SerializeField] private FlagManager _flagManager;
     [SerializeField] private NotesManager _notesManager;
     [SerializeField] private ObjectiveManager _objectiveManager;
@@ -78,6 +79,7 @@ public class SaveManager : MonoBehaviour
             _notesManager.SetNotes(_currentSaveData.notes);
             _objectiveManager.SetCurrentObjective(_currentSaveData.currentObjectiveIndex);
             _playerBehavior.SetBounds(_currentSaveData.boundLeft, _currentSaveData.boundRight, _currentSaveData.boundUp, _currentSaveData.boundDown);
+            _cameraController.SetBounds(_currentSaveData.boundLeft, _currentSaveData.boundRight, _currentSaveData.boundUp, _currentSaveData.boundDown);
         }
     }
 }

@@ -85,7 +85,7 @@ public class PersonalDPad : MonoBehaviour, IDragHandler, IPointerDownHandler, IP
 			else
 				yAxis = 0;
 
-			if (angle <= 45f || angle >= 275f)
+			if (angle <= 45f || angle >= 315f)
 				xAxis = 1;
 			else if (angle >= 135f && angle <= 225f)
 				xAxis = -1;

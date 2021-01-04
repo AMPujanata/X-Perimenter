@@ -44,4 +44,12 @@ public class CameraController : MonoBehaviour
         _boundUp = bound.bounds.max.y;
         _boundDown = bound.bounds.min.y;
     }
+    public void SetBounds(float boundLeft, float boundRight, float boundUp, float boundDown)
+    {
+
+        _boundLeft = boundLeft;
+        _boundRight = boundRight;
+        _boundUp = boundUp;
+        _boundDown = boundDown;
+    }
 }

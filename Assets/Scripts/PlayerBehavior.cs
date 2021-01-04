@@ -7,6 +7,19 @@ public enum MovementType
     FREE, GRID
 };
 
+public enum Direction
+{
+    LEFT, RIGHT, UP, DOWN
+};
+
+[System.Serializable]
+public class PlayerSpriteSet
+{
+    public Sprite idleSprite;
+    public Sprite leftFootSprite;
+    public Sprite rightFootSprite;
+}
+
 public class PlayerBehavior : MonoBehaviour
 {
     private bool _canMove;
@@ -18,6 +31,15 @@ public class PlayerBehavior : MonoBehaviour
     [SerializeField] private PersonalDPad _dPad;
     [SerializeField] private float _tileSize;
     [SerializeField] private float _gridMoveSpeed;
+    [SerializeField] private float _timePerTile;
+    [SerializeField] private Direction _startingDirection;
+    [SerializeField] private PlayerSpriteSet _leftSprite;
+    [SerializeField] private PlayerSpriteSet _rightSprite;
+    [SerializeField] private PlayerSpriteSet _upSprite;
+    [SerializeField] private PlayerSpriteSet _downSprite;
+    private Direction _currentFoot;
+    private PlayerSpriteSet _currentSpriteSet;
+    private SpriteRenderer _spriteRenderer;
     private bool _isPlayerMoving;
     private float _boundLeft;
     private float _boundRight;
@@ -29,6 +51,9 @@ public class PlayerBehavior : MonoBehaviour
     private float _2DColliderBoundDown;
     void Awake()
     {
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _spriteRenderer.sprite = DirectionToSpriteConverter(_startingDirection).idleSprite;
+        _currentFoot = Direction.LEFT;
         _canMove = true;
         _isPlayerMoving = false;
         _2DCollider = GetComponent<BoxCollider2D>();
@@ -64,13 +89,21 @@ public class PlayerBehavior : MonoBehaviour
             {
                 if (!_isPlayerMoving)
                 {
-                    if (_dPad.GetHorizontalInput() != 0)
+                    if (_dPad.GetVerticalInput() > 0)
                     {
-                        StartCoroutine(MoveToTile(_dPad.GetHorizontalInput(), 0));
+                        StartCoroutine(MoveToTile(Direction.UP));
                     }
-                    else if (_dPad.GetVerticalInput() != 0)
+                    else if (_dPad.GetHorizontalInput() > 0)
                     {
-                        StartCoroutine(MoveToTile(0, _dPad.GetVerticalInput()));
+                        StartCoroutine(MoveToTile(Direction.RIGHT));
+                    }
+                    else if (_dPad.GetHorizontalInput() < 0)
+                    {
+                        StartCoroutine(MoveToTile(Direction.LEFT));
+                    }
+                    else if (_dPad.GetVerticalInput() < 0)
+                    {
+                        StartCoroutine(MoveToTile(Direction.DOWN));
                     }
                 }
             }
@@ -79,6 +112,8 @@ public class PlayerBehavior : MonoBehaviour
 
     public void CheckForInteraction() //currently only interacts with the first found object in the array
     {
+        if (!_canMove)
+            return;
         Collider2D[] overlap = Physics2D.OverlapAreaAll(_2DCollider.bounds.min, _2DCollider.bounds.max);
         for (int i = 0; i < overlap.Length; i++)
         {
@@ -94,39 +129,59 @@ public class PlayerBehavior : MonoBehaviour
         }
     }
 
-    public IEnumerator MoveToTile(int horizontalTile, int verticalTile)
+    public IEnumerator MoveToTile(Direction _direction)
     {
         _isPlayerMoving = true;
-        Vector2 startPos = new Vector2(transform.position.x, transform.position.y);
-        Vector2 endPos = startPos + new Vector2(horizontalTile * _tileSize, verticalTile * _tileSize);
-        Vector2 dir = (endPos - startPos).normalized;
-        float time = 0;
-        Debug.Log(_boundLeft.ToString() + _boundRight.ToString() + _boundUp.ToString() + _boundDown.ToString());
 
-        Debug.DrawRay(startPos, dir);
+        Vector2 dir = Vector2.up;
+        if(_direction == Direction.LEFT)
+        {
+            dir = Vector2.left;
+        }
+        else if (_direction == Direction.RIGHT)
+        {
+            dir = Vector2.right;
+        }
+        else if (_direction == Direction.UP)
+        {
+            dir = Vector2.up;
+        }
+        else if (_direction == Direction.DOWN)
+        {
+            dir = Vector2.down;
+        }
+        _currentSpriteSet = DirectionToSpriteConverter(_direction);
+
+        Vector2 startPos = new Vector2(transform.position.x, transform.position.y);
+        Vector2 endPos = startPos + (dir * _tileSize);
+        float time = 0;
+
         if (endPos.x < _boundLeft)
         {
             _isPlayerMoving = false;
+            _spriteRenderer.sprite = _currentSpriteSet.idleSprite;
             yield break;
         }
         else if (endPos.x > _boundRight)
         {
             _isPlayerMoving = false;
+            _spriteRenderer.sprite = _currentSpriteSet.idleSprite;
             yield break;
         }
         else if (endPos.y < _boundDown) // ???? why doesnt it work with bound down? i hate this holy shit
         {
             _isPlayerMoving = false;
+            _spriteRenderer.sprite = _currentSpriteSet.idleSprite;
             yield break;
         }
         else if (endPos.y > _boundUp)
         {
             _isPlayerMoving = false;
+            _spriteRenderer.sprite = _currentSpriteSet.idleSprite;
             yield break;
         }
-        Debug.Log("Made it past bound checking");
         int layerMask = 1 << 8;
-        layerMask = ~layerMask; //doesn't collide against layer 8, aka IgnoreRaycast
+        layerMask = ~layerMask; //doesn't collide against layer 8, aka IgnoreRaycast (ignore the fact there are 2 ignoreraycast layers, i didnt check)
 
         //rudimentary check to see if endPos is on a passable tile or not
         RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, Mathf.Infinity, layerMask);
@@ -135,24 +190,45 @@ public class PlayerBehavior : MonoBehaviour
         {
             if (hit.distance > _tileSize)
             {
+                if (_currentFoot == Direction.LEFT)
+                    _spriteRenderer.sprite = _currentSpriteSet.leftFootSprite;
+                else
+                    _spriteRenderer.sprite = _currentSpriteSet.rightFootSprite;
                 while (Vector2.Distance(transform.position, endPos) > 0.001f)
                 {
+                    if (Vector2.Distance(transform.position, endPos) <= (_tileSize / 2))
+                        _spriteRenderer.sprite = _currentSpriteSet.idleSprite;
                     time += Time.deltaTime;
                     transform.position = Vector2.MoveTowards(transform.position, endPos, _gridMoveSpeed * Time.deltaTime);
                     yield return null;
                 }
+                if (_currentFoot == Direction.LEFT)
+                    _currentFoot = Direction.RIGHT;
+                else
+                    _currentFoot = Direction.LEFT;
             }
         }
         else
         {
+            if (_currentFoot == Direction.LEFT)
+                _spriteRenderer.sprite = _currentSpriteSet.leftFootSprite;
+            else
+                _spriteRenderer.sprite = _currentSpriteSet.rightFootSprite;
             while (Vector2.Distance(transform.position, endPos) > 0.001f)
             {
+                if (Vector2.Distance(transform.position, endPos) <= (_tileSize / 2))
+                    _spriteRenderer.sprite = _currentSpriteSet.idleSprite;
                 time += Time.deltaTime;
                 transform.position = Vector2.MoveTowards(transform.position, endPos, _gridMoveSpeed * Time.deltaTime);
                 yield return null;
             }
+            if (_currentFoot == Direction.LEFT)
+                _currentFoot = Direction.RIGHT;
+            else
+                _currentFoot = Direction.LEFT;
         }
         _isPlayerMoving = false;
+        _spriteRenderer.sprite = _currentSpriteSet.idleSprite;
         yield break;
     }
 
@@ -194,6 +270,30 @@ public class PlayerBehavior : MonoBehaviour
         {
             Debug.Log("Error reading bound string (wrong identifier?)");
             return 0;
+        }
+    }
+
+    public PlayerSpriteSet DirectionToSpriteConverter(Direction _direction)
+    {
+        if (_direction == Direction.LEFT)
+        {
+            return _leftSprite;
+        }
+        else if (_direction == Direction.RIGHT)
+        {
+            return _rightSprite;
+        }
+        else if (_direction == Direction.UP)
+        {
+            return _upSprite;
+        }
+        else if (_direction == Direction.DOWN)
+        {
+            return _downSprite;
+        }
+        else
+        {
+            return _upSprite;
         }
     }
 }
