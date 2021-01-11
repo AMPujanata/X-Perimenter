@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c1d9e1498d50e45b17fc49e247a8ec, type: 3}
+  m_Name: Room103SecondChoice
+  m_EditorClassIdentifier: 
+  Choices:
+  - ChoiceText: Tanya lebih jauh
+    NextDialogue: {fileID: 11400000, guid: 5ae93254d556359419b959c3daa062fe, type: 2}
+    ShouldTriggerAfterDialogueEvent: 0
+  - ChoiceText: Tidak bertanya lagi
+    NextDialogue: {fileID: 11400000, guid: 76ef8e25b2f55b64da747492498367ab, type: 2}
+    ShouldTriggerAfterDialogueEvent: 0

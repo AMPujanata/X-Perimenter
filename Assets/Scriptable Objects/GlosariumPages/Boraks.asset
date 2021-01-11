@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 702ca1d20c32a7549b674b75539076d1, type: 3}
+  m_Name: Boraks
+  m_EditorClassIdentifier: 
+  ChemicalName: Boraks (Na<sub>2</sub>B<sub>4</sub>O<sub>7</sub>.10H<sub>2</sub>O)
+  ChemicalPicture: {fileID: 21300000, guid: 4314787c4c44bb04e89d58b4b64379b5, type: 3}
+  IUPACName: Sodium tetraborate decahydrate
+  OtherNames: Air bleng, bubuk gendar, pijer, hydrogen orthoborate, dll.
+  Characteristics: Bentuk padatnya berupa tepung atau balok berwarna putih kekuningan,
+    bentuk carinya tidak berwarna.
+  ActualUses:
+  - Pelapis barang pecah belah
+  - Pemutih kertas
+  - Antiseptik dan disinfektan
+  - Produksi kapasitor
+  - Penyegar
+  - Mengurangi bakteri dan jamur
+  WrongUse: Sebagai <color=red>pengawet makanan</color> seperti bakso, mie basah,
+    pisang molen, siomay, longtong, ketupat, dan pangsit.
+  ShortenedChemicalName: Boraks
+  Effects:
+  - <color=red>Badan terasa tidak enak</color>
+  - <color=red>Mual dan muntah darah</color>
+  - <color=red>Gangguan pencernaan</color>
+  - <color=red>Nyeri pada perut bagian atas</color>
+  - <color=red>Demam dan sakit kepala</color>
+  - <color=red>Gangguan sistem saraf pusat</color>
+  AssociatedLevelNumber: 1

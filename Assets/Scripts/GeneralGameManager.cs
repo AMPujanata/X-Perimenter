@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
-
+using UnityEngine.UI;
 public class GeneralGameManager : MonoBehaviour
 {
     [SerializeField] private GameObject _pauseCanvas;
@@ -11,7 +11,10 @@ public class GeneralGameManager : MonoBehaviour
     [SerializeField] private GameObject _dialogueCanvas;
     [SerializeField] private GameObject _gameOverCanvas;
     [SerializeField] private GameObject _levelClearCanvas;
+    [SerializeField] private Image _fadeImage;
+    [SerializeField] private float _fadeTime;
     [SerializeField] private UnityEvent _startOfLevelEvent;
+    [SerializeField] private AudioSource _audioSource;
     private bool _gameUICanvasWasActive;
     private bool _dialogueCanvasWasActive;
     private float _previousTimeScale;
@@ -87,13 +90,115 @@ public class GeneralGameManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
+    public void FadeIn()
+    {
+        StartCoroutine(FadeInProcess());
+    }
+
+    public void FadeOut()
+    {
+        StartCoroutine(FadeOutProcess());
+    }
+
     public void TeleportPlayerHere(Transform teleportPointTransform)
     {
+        StartCoroutine(TeleportPlayerHereProcess(teleportPointTransform));
+    }
+
+    public IEnumerator FadeInProcess()
+    {
+        float timeElapsed = 0;
+        Color c = _fadeImage.color;
+        float alpha = 0;
+        while(timeElapsed < _fadeTime)
+        {
+            alpha = Mathf.Lerp(0, 1, timeElapsed / _fadeTime);
+            c.a = alpha;
+            _fadeImage.color = c;
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        c.a = 1;
+        _fadeImage.color = c;
+        yield break;
+    }
+
+    public IEnumerator FadeOutProcess()
+    {
+        float timeElapsed = 0;
+        Color c = _fadeImage.color;
+        float alpha = 1;
+        while (timeElapsed < _fadeTime)
+        {
+            alpha = Mathf.Lerp(1, 0, timeElapsed / _fadeTime);
+            c.a = alpha;
+            _fadeImage.color = c;
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        c.a = 0;
+        _fadeImage.color = c;
+        yield break;
+    }
+
+    public IEnumerator TeleportPlayerHereProcess(Transform teleportPointTransform)
+    {
+        _player.ToggleMovement(false);
+
+        float timeElapsed = 0;
+        Color c = _fadeImage.color;
+        float alpha = 0;
+        while (timeElapsed < _fadeTime)
+        {
+            alpha = Mathf.Lerp(0, 1, timeElapsed / _fadeTime);
+            c.a = alpha;
+            _fadeImage.color = c;
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        c.a = 1;
+        _fadeImage.color = c;
+
         TeleportPoint teleportPoint = teleportPointTransform.gameObject.GetComponent<TeleportPoint>();
-        //also put fade here
         _player.transform.position = teleportPointTransform.position;
         _player.SetBounds(teleportPoint.GetBound());
         _camera.SetBounds(teleportPoint.GetBound());
-		_player.ToggleMovement(true);
+
+        timeElapsed = 0;
+        while (timeElapsed < _fadeTime)
+        {
+            alpha = Mathf.Lerp(1, 0, timeElapsed / _fadeTime);
+            c.a = alpha;
+            _fadeImage.color = c;
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        c.a = 0;
+        _fadeImage.color = c;
+
+        _player.ToggleMovement(true);
+        yield break;
+    }
+
+    public void PlayAudioClip(AudioClip clip)
+    {
+        _audioSource.PlayOneShot(clip);
+    }
+
+    public void SwitchBGM(AudioClip BGM)
+    {
+        _audioSource.Stop();
+        _audioSource.clip = BGM;
+        _audioSource.Play();
+    }
+
+    public void StopBGM()
+    {
+        _audioSource.Stop();
+    }
+
+    public void StartBGM()
+    {
+        _audioSource.Play();
     }
 }

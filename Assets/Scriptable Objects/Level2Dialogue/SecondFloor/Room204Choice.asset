@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c1d9e1498d50e45b17fc49e247a8ec, type: 3}
+  m_Name: Room204Choice
+  m_EditorClassIdentifier: 
+  Choices:
+  - ChoiceText: Ketok pintu
+    NextDialogue: {fileID: 11400000, guid: 2b872f28ab2c6ee44b8f2b111915502d, type: 2}
+    ShouldTriggerAfterDialogueEvent: 0
+  - ChoiceText: Biarkan saja
+    NextDialogue: {fileID: 11400000, guid: 8508e70c1f407e2498c0b6da89acf7d7, type: 2}
+    ShouldTriggerAfterDialogueEvent: 0

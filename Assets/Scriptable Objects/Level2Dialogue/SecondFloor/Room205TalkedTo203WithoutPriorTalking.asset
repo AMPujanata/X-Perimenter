@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: Room205TalkedTo203WithoutPriorTalking
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Selamat siang.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 205
+    SpeakerLine: Siang. Ada apa?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Tadi saya sudah bicara dengan penghuni ruang 203, dan dia janji
+      dia akan membagi uangnya ke anda jika anda membantu saya.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 205
+    SpeakerLine: 'Oh, begitukah? Kalau gitu, langsung saja. Jangan beri tahu informasi
+      ini ke siapapun, apalagi satpam. '
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 205
+    SpeakerLine: Targetmu menyimpan kunci cadangan di bawah karpet depan pintunya.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 205
+    SpeakerLine: Ambil saja lalu pakai untuk buka pintunya. Dengan itu, anda bisa
+      melihat apa yang di dalam.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 205
+    SpeakerLine: Selain itu... 3 hari yang lalu pacarnya diam-diam datang kesini.
+      Hari itu adalah ulang tahun <nama pasien>. Mungkin ada hubungannya dengan ulang
+      tahun dia.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Baiklah. Terima kasih atas kerjasama anda.
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 0}
+  _nextDialogue: {fileID: 0}
+  _flagType: 0
+  _flagIndex: 0

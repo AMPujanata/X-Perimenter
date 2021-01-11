@@ -30,7 +30,7 @@ MonoBehaviour:
       Kenapa ada di sini?</i>)
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: (<i>Sebaiknya aku kasih tahu ibu lagi. Sepertinya aku menemukan
+    SpeakerLine: (<i>Sebaiknya saya kasih tahu ibu lagi. Sepertinya saya menemukan
       akibat keracunan anaknya...</i>)
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}

@@ -16,7 +16,7 @@ MonoBehaviour:
   Lines:
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: (<i>Sudahlah, jangan makan lagi? Nanti saya mual...</i>)
+    SpeakerLine: (<i>Sudahlah, jangan makan lagi. Nanti saya mual...</i>)
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
   _flagType: 1

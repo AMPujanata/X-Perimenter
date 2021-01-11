@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: Room102GameOver
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Satpam
+    SpeakerLine: Ada apa!?
+  - _dontEditThis: 
+    SpeakerName: Penghuni 102
+    SpeakerLine: Tolong usir orang ini, dia mengganggu saya dan tidak mau pergi!
+  - _dontEditThis: 
+    SpeakerName: Satpam
+    SpeakerLine: Pak... apa yang anda lakukan? Anda tidak perlu mengganggu penghuni
+      sampai segini.
+  - _dontEditThis: 
+    SpeakerName: Satpam
+    SpeakerLine: Cepat keluar. Kalau tidak, nanti saya akan keluarkan secara paksa.
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: ...Baiklah.
+  _nextChoice: {fileID: 0}
+  _nextDialogue: {fileID: 0}
+  _flagType: 0
+  _flagIndex: 0

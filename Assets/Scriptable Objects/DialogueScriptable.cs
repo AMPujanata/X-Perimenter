@@ -17,6 +17,7 @@ public struct Line
     //public Sprite SpeakerSprite;
     //public Orientation SpeakerOrientation;
     [TextArea] public string SpeakerLine;
+    public AudioClip lineSFX;
 }
 
 [CreateAssetMenu(fileName = "New Dialogue", menuName = "ScriptableObjects/Dialogue", order = 1)]

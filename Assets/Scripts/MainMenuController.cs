@@ -8,21 +8,42 @@ using System.Runtime.Serialization.Formatters.Binary;
 public class MainMenuController : MonoBehaviour
 {
     [SerializeField] private Button[] LevelSelectButtons;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private Button _loadGameButton;
+    [SerializeField] private GameObject _loadGameLockedObject;
     void Start()
     {
         Screen.orientation = ScreenOrientation.LandscapeLeft;
-        PlayerPrefs.SetInt("IsLevel0Cleared", 1);
+        PlayerPrefs.SetInt("IsLevel1Unlocked", 1);
+        if (File.Exists(Application.persistentDataPath + "/saveData.dat"))
+        {
+            _loadGameButton.interactable = true;
+            _loadGameLockedObject.SetActive(false);
+        }
+        else
+        {
+            _loadGameButton.interactable = false;
+            _loadGameLockedObject.SetActive(true);
+        }
     }
 
     public void CheckLevelValidity()
     {
+        int levelToCheck = 0;
         for(int i = 0; i < LevelSelectButtons.Length; i++)
         {
-            if(PlayerPrefs.GetInt("IsLevel" + i.ToString() + "Cleared", 0) == 0)
+            levelToCheck = i + 1;
+            if(PlayerPrefs.GetInt("IsLevel" + levelToCheck.ToString() + "Unlocked", 0) == 0)
             {
-                LevelSelectButtons[i].enabled = false;
+                LevelSelectButtons[i].interactable = false;
                 LevelSelectButtons[i].transform.GetChild(0).gameObject.SetActive(false);
                 LevelSelectButtons[i].transform.GetChild(1).gameObject.SetActive(true);
+            }
+            else
+            {
+                LevelSelectButtons[i].interactable = true;
+                LevelSelectButtons[i].transform.GetChild(0).gameObject.SetActive(true);
+                LevelSelectButtons[i].transform.GetChild(1).gameObject.SetActive(false);
             }
         }
     }
@@ -46,7 +67,6 @@ public class MainMenuController : MonoBehaviour
 
     public void PrepareLoadGame()
     {
-
         if(File.Exists(Application.persistentDataPath + "/saveData.dat"))
         {
             SaveData tempSaveData = new SaveData();
@@ -59,4 +79,17 @@ public class MainMenuController : MonoBehaviour
             SceneManager.LoadScene(tempSaveData.levelNumber);
         }
     }
+
+    public void PlayAudioClip(AudioClip clip)
+    {
+        _audioSource.PlayOneShot(clip);
+    }
+
+    public void SwitchBGM(AudioClip BGM)
+    {
+        _audioSource.Stop();
+        _audioSource.clip = BGM;
+        _audioSource.Play();
+    }
+
 }

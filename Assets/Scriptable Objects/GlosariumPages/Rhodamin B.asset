@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 702ca1d20c32a7549b674b75539076d1, type: 3}
+  m_Name: Rhodamin B
+  m_EditorClassIdentifier: 
+  ChemicalName: Rhodamin B (C<sub>28</sub>H<sub>31</sub>CIN<sub>2</sub>O<sub>3</sub>)
+  ChemicalPicture: {fileID: 21300000, guid: 956c12d7499107941939c325e064c8a4, type: 3}
+  IUPACName: '[9-(2-carboxyphenyl)-6-diethylamino-3-xanthenylidene]-diethylammoniumchloride'
+  OtherNames: Rheonine B, Basic Violet 10, C.I. 45170, Brilliant Pink B, dll.
+  Characteristics: Bentuk padatnya bubuk kristal berwarna merah-ungu. Bentuk cairnya
+    berwarna merah terang.
+  ActualUses:
+  - Pewarna tekstil
+  - Pewarna kertas dan plastik
+  - Pewarna keramik dan ubin
+  - Sitometri
+  - Mikroskop fluoresensi
+  - Sebagai pereaksi kimia
+  WrongUse: Sebagai <color=red>pewarna makanan</color> seperti sirup, limun, es mambo,
+    bakpao, es cendol, es kelapa, kue basah pangan kipang, kerupuk, saus, dan sambal
+    kemasan.
+  ShortenedChemicalName: Rhodamin B
+  Effects:
+  - <color=red>Pembesaran hati dan ginjal</color>
+  - <color=red>Gangguan fungsi hati</color>
+  - <color=red>Kanker hati</color>
+  - <color=red>Iritasi saluran pencernaan</color>
+  - <color=red>Urin berwarna merah</color>
+  - <color=red>Gangguan fisiologis tubuh</color>
+  AssociatedLevelNumber: 3

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: Room203FourthWhyDoThis
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Mengapa anda melakukan hal seperti ini?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 203
+    SpeakerLine: Bukan urusan kamu? Kamu udah bayar, kan? Udah bagus tidak saya lapor
+      untuk mencoba uang suap.
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 11400000, guid: a2e7921f83d530a40b8504a7a1b611f9, type: 2}
+  _nextDialogue: {fileID: 0}
+  _flagType: 0
+  _flagIndex: 0

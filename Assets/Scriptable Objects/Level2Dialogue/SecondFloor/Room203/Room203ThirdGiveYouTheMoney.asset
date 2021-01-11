@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: Room203ThirdGiveYouTheMoney
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Bagaimana jika saya kasih uang jajan?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 203
+    SpeakerLine: Nah, baru gitu seru. Sini, kasih saya duitnya.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: 
+    SpeakerLine: -Saya ambil uang dari dompet saya, yang langsung diambil penghuni
+      ruangan.-
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 203
+    SpeakerLine: Satu, dua, tiga... Ya, cukuplah. Yaudah, saya kasih tahu yang saya
+      ketahui.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 203
+    SpeakerLine: 'Sebenarnya tadi saya sudah bilang kan, kalau saya benci dia? Mungkin
+      anda bisa memberitahukan soal ini ke satpam. '
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 203
+    SpeakerLine: Sebelumnya, si bodoh itu membawa pacarnya kemari tanpa sepengetahuan
+      siapapun. Sudah 3 hari sejak itu.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Lalu?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 203
+    SpeakerLine: '"Lalu"? Ya, si bodoh itu dibawa ke rumah sakit sekarang. Mungkin
+      dia kena penyakit cinta, hah.'
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 203
+    SpeakerLine: Hmm. Bukan hanya saya saja yang membenci dia. Orang di kamar 205
+      juga benci dengannya. Mungkin kalau kamu tanya, dia akan leih tahu tentang
+      dia. Tentunya... jika dibayar.
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 11400000, guid: aab11be5e69265847a1c39c816abb5b8, type: 2}
+  _nextDialogue: {fileID: 0}
+  _flagType: 0
+  _flagIndex: 0

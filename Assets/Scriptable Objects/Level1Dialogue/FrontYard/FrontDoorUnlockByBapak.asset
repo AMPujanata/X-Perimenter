@@ -17,10 +17,12 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: Bapak
     SpeakerLine: Silahkan, mari saya bukakan pintunya.
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: 
     SpeakerLine: -Bapak rumah memasukkan kuncinya ke dalam pintu, dan memutarnya.
       Saya mendengar suara 'klik'.-
+    lineSFX: {fileID: 8300000, guid: a8314f2ec2e96684797379827bb0e961, type: 3}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
   _flagType: 1

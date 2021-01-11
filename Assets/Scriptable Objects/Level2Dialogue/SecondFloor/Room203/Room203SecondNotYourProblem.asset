@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: Room203SecondNotYourProblem
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Kepentingan saya bukan urusan anda. Kasih tahu saja.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 203
+    SpeakerLine: Heeeh, gitu. Kalau gitu, yang saya tahu bukan urusan kamu juga.
+      Pergi.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: 
+    SpeakerLine: -Penghuni kamar menutup pintu secara kencang di depan muka saya.-
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: (<i>Sepertinya 203 memiliki rahasia yang dia sembunyikan... sayangnya
+      saya tidak bisa mengali informasi lebih lanjut.</i>)
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: (<i>Berbicara dengan dia membuat kepala saya pusing, tapi sepertinya
+      perlu saya tanya lebih lanjut...</i>)
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 0}
+  _nextDialogue: {fileID: 0}
+  _flagType: 0
+  _flagIndex: 0

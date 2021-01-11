@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: Room205
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Selamat siang.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 205
+    SpeakerLine: Siang... ada apa?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Saya dari badan detektif cabang kota <nama kota>. Apakah anda teman
+      dari <nama pasien>?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 205
+    SpeakerLine: Iya, saya temannya. Kenapa, memang?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Apa ada hal yang anda ketahui tentang <nama pasien>?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 205
+    SpeakerLine: Hmm, ada beberapa hal yang bisa saya kasih tahu... dan beberapa
+      yang tidak bisa.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 205
+    SpeakerLine: Tiga hari yang lalu, pacarnya <nama pasien> data ke sini secara
+      sembunyi. Saat hari itu, pas ulang tahunnya <nama pasien>.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 205
+    SpeakerLine: Padahal, di sini tidak dibolehkan bawa pacar masuk tanpa mengasih
+      tahu.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 205
+    SpeakerLine: Iya, hanya itu yang bisa saya kasih tahu. Kecuali...
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Kecuali?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 205
+    SpeakerLine: Coba anda tanya ke ruang 203. Mungkin dia lebih tahu... heh.
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 0}
+  _nextDialogue: {fileID: 0}
+  _flagType: 0
+  _flagIndex: 0

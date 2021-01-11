@@ -17,21 +17,27 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: Ah, sepertinya aku sudah sampai di rumahnya.
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: ...Sudah beberapa hari setelah <nama anak> sakit. Kedua orang tuanya
-      saat itu sibuk, sehingga tidak bisa mengurusnya. Baru hari ini mereka senggang.
+    SpeakerLine: ...Sudah beberapa hari setelah teman saya, Budi, sakit. Kedua orang
+      tuanya saat itu sibuk, sehingga tidak bisa mengurusnya. Baru hari ini mereka
+      senggang.
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: Dari yang saya dengar dari orang sekitar, dia mengalami gejala mual,
       demam, sakit tenggorokan, diare, dan sesak napas.
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: Setelah dicek ke dokter, dokter bilang bahwa dia keracunan makanan.
-      Ah, mungkin gara-gara <nama anak> gak menjaga kebersihan saat makan.
+      Ah, mungkin gara-gara Budi gak menjaga kebersihan saat makan.
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: Kasihan sekali, dia. Sebaiknya aku menjenguk selagi menghiburnya.
+    SpeakerLine: Kasihan sekali, dia. Sebaiknya saya menjenguk selagi menghiburnya.
+    lineSFX: {fileID: 0}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
   _flagType: 0

@@ -50,7 +50,7 @@ public class NotesManager : MonoBehaviour
         }
         if (_notes.Count == 0)
         {
-            _notePrefabs[0].transform.GetChild(0).gameObject.GetComponent<Text>().text = "No clues yet...";
+            _notePrefabs[0].transform.GetChild(0).gameObject.GetComponent<Text>().text = "Belum ada catatan...";
             _notePrefabs[0].SetActive(true);
         }
         else

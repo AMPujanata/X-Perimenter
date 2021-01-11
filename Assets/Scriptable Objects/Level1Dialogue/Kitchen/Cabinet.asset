@@ -20,7 +20,7 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: ...hm? Sepertinya ada garam yang berbeda merek. Sepertinya mereknya
-      ditempel...? Sebaiknya aku bertanya kepada ibu.
+      ditempel...? Sebaiknya saya bertanya kepada ibu.
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
   _flagType: 1

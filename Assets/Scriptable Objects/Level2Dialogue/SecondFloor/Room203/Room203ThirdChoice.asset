@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c1d9e1498d50e45b17fc49e247a8ec, type: 3}
+  m_Name: Room203ThirdChoice
+  m_EditorClassIdentifier: 
+  Choices:
+  - ChoiceText: Saya hanya ingin tahu
+    NextDialogue: {fileID: 11400000, guid: afc2a3f5371b6d64588c4b1f962a6426, type: 2}
+    ShouldTriggerAfterDialogueEvent: 0
+  - ChoiceText: Saya bisa memberikan uang
+    NextDialogue: {fileID: 11400000, guid: e1e473a935461674bbd86640d4a6ca2c, type: 2}
+    ShouldTriggerAfterDialogueEvent: 0

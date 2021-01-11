@@ -17,22 +17,28 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: Ibu
     SpeakerLine: Astaga! Kamu kenapa?
+    lineSFX: {fileID: 8300000, guid: 025a77adfba55b5438f4b03cf08131c1, type: 3}
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: ...
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Ibu
     SpeakerLine: Tolong! Ada orang yang pingsan di sini!
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Bapak
     SpeakerLine: Loh, ada apa dengan dia!?
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Ibu
-    SpeakerLine: S-Saya nggak tahu, pak! Saya tinggal dia sebentar, dan tiba-tiba
+    SpeakerLine: S-Saya tidak tahu, pak! Saya tinggal dia sebentar, dan tiba-tiba
       saya dengar suara ambruk! Lalu tamu kita pingsan di lantai!
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Bapak
     SpeakerLine: Cepat, bawa dia ke rumah sakit!
+    lineSFX: {fileID: 0}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
   _flagType: 1

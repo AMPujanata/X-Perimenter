@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Text _dialogueText;
     [SerializeField] private GameObject _choiceDialogueContainer;
     [SerializeField] private Button[] _choiceTextButtons;
+    [SerializeField] private AudioClip _defaultDialogueAdvanceSound;
     private List<int> _flagsToTriggerAfter;
     private DialogueScriptable _currentDialogue;
     private int currentIndex;
@@ -32,6 +33,14 @@ public class DialogueManager : MonoBehaviour
         _playerBehavior.ToggleMovement(false);
         _currentDialogue = dialogueFormat;
         currentIndex = 0;
+        if (_currentDialogue.Lines[currentIndex].lineSFX != null)
+        {
+            _generalGameManager.PlayAudioClip(_currentDialogue.Lines[currentIndex].lineSFX);
+        }
+        else
+        {
+            _generalGameManager.PlayAudioClip(_defaultDialogueAdvanceSound);
+        }
         //_speakerSprite.sprite = _currentDialogue.Lines[currentIndex].SpeakerSprite;
         _speakerNameText.text = _currentDialogue.Lines[currentIndex].SpeakerName;
         _dialogueText.text = _currentDialogue.Lines[currentIndex].SpeakerLine;
@@ -44,6 +53,14 @@ public class DialogueManager : MonoBehaviour
         if (currentIndex  < _currentDialogue.Lines.Length - 1)
         {
             currentIndex++;
+            if (_currentDialogue.Lines[currentIndex].lineSFX != null)
+            {
+                _generalGameManager.PlayAudioClip(_currentDialogue.Lines[currentIndex].lineSFX);
+            }
+            else
+            {
+                _generalGameManager.PlayAudioClip(_defaultDialogueAdvanceSound);
+            }
             //_speakerSprite.sprite = _currentDialogue.Lines[currentIndex].SpeakerSprite;
             _speakerNameText.text = _currentDialogue.Lines[currentIndex].SpeakerName;
             _dialogueText.text = _currentDialogue.Lines[currentIndex].SpeakerLine;
@@ -92,6 +109,7 @@ public class DialogueManager : MonoBehaviour
     public void SetupChoiceDialogue(ChoiceScriptable choiceFormat)
     {
         int index = 0;
+        _generalGameManager.PlayAudioClip(_defaultDialogueAdvanceSound);
         foreach (Choice choice in choiceFormat.Choices)
         {
             _choiceTextButtons[index].gameObject.SetActive(true);

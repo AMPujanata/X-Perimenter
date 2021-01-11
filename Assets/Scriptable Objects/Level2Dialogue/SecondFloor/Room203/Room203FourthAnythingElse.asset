@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: Room203FourthAnythingElse
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Apakah ada hal lain yang bisa saya ketahui?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 203
+    SpeakerLine: Hmm... karena kamu udah baik, udah bayar... oke. Nanti bilang saja
+      ke penghuni 205 kalau saya sudah dibayar dan akan bagi dua.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 203
+    SpeakerLine: 'Dengan begitu, kamu bisa dapat petunjuk dari dia juga. Tuh, baik
+      kan, saya? '
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Baiklah kalau begitu. Terima kasih atas kerjasamanya.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penghuni 203
+    SpeakerLine: Hah. Terima kasih atas uangnya.
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 0}
+  _nextDialogue: {fileID: 0}
+  _flagType: 0
+  _flagIndex: 0

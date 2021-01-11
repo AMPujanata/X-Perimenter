@@ -18,18 +18,18 @@ MonoBehaviour:
     SpeakerName: Detektif
     SpeakerLine: (<i>Ah, biarinlah. Paling hanya bumbu spesial ibu itu. Mungkin aku
       akan lebih terbiasa setelah...</i>)
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: (<i>...ugh, perutku kenapa sakit? Serasanya seperti makin sakit
-      tiap kali aku bernafas...</i>
+    SpeakerLine: (<i>...ugh, perut saya kenapa sakit? Serasanya seperti makin sakit
+      tiap kali saya bernafas...</i>
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: 
-    SpeakerLine: -Badanku mulai memanas secara cepat. Kepalaku terasa seperti mau
-      pecah, dan aku terasa seperti mual.-
-  - _dontEditThis: 
-    SpeakerName: 
-    SpeakerLine: -Badan saya ambruk, dan mata saya tertutup, Yang terakhir saya ingat...-
+    SpeakerLine: -Badanku mulai memanas secara cepat. Kepala saya terasa seperti
+      mau pecah, dan saya terasa seperti mual.-
+    lineSFX: {fileID: 0}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 11400000, guid: 3d0456ee915c0cc409bb529a8292a2ab, type: 2}
-  _flagType: 0
-  _flagIndex: 0
+  _flagType: 1
+  _flagIndex: 9

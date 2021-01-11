@@ -22,10 +22,10 @@ MonoBehaviour:
     SpeakerLine: Anda siapa ya...?
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: Saya kenalan dari <<nama anak>>. Saya ingin bertemu dengannya.
+    SpeakerLine: Saya teman anak anda, Budi. Saya ingin menjenguknya.
   - _dontEditThis: 
     SpeakerName: Ibu
-    SpeakerLine: Ohh, temannya <<nama anak>> ya? Selamat datang!
+    SpeakerLine: Ohh, temannya Budi ya? Selamat datang!
   - _dontEditThis: 
     SpeakerName: Ibu
     SpeakerLine: Silahkan duduk dulu, ya. Saya akan siapkan sesuatu untuk anda.

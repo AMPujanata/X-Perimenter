@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 702ca1d20c32a7549b674b75539076d1, type: 3}
+  m_Name: Formalin
+  m_EditorClassIdentifier: 
+  ChemicalName: Formalin (CH<sub>2</sub>O)
+  ChemicalPicture: {fileID: 21300000, guid: 01f2e464e00d6144d9affa3790d8b608, type: 3}
+  IUPACName: Formaldehyde atau Methanal
+  OtherNames: Formol, Oxymethylene, Formoform, Superlysoform, Paraforin, dll.
+  Characteristics: Bentuk padatnya berwarna putih. Bentuk gasnya dan bentuk cairnya
+    tidak berwarna.
+  ActualUses:
+  - Pengawet mayat
+  - Insektisida
+  - Bahan konstruksi
+  - Produksi karpet dan tekstil
+  - Disinfektan
+  - Produksi cermin dan kaca
+  WrongUse: Sebagai <color=red>pengawet makanan</color> seperti tahu, mie basah,
+    bakso, ikan asin, dan ikan segar.
+  ShortenedChemicalName: Formalin
+  Effects:
+  - <color=red>Mual, muntah, diare</color>
+  - <color=red>Kerusakan hati dan ginjal</color>
+  - <color=red>Infertilitas</color>
+  - <color=red>Iritasi mata dan kulit</color>
+  - <color=red>Gangguan saluran pernapasan</color>
+  - <color=red>Gangguan sistem saraf pusat</color>
+  AssociatedLevelNumber: 2
