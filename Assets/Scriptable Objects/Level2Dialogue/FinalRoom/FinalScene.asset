@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: FinalScene
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Satpam
+    SpeakerLine: Apa yang anda lakukan di sini? Anda tidak seharusnya bisa masuk
+      ke kamar ini!
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Satpam
+    SpeakerLine: 'Keluar sekarang. Anda sudah melanggar peraturan mess ini. '
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Baiklah. Saya sudah selesai dengan apa yang perlu saya lakukan.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Lain kali... lakukan pekerjaanmu secara benar, ya? Karena kelalaianmu,
+      seseorang mati di mess ini.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Satpam
+    SpeakerLine: Sudah, jangan banyak omong! Pergi!
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: (<i>Meskipun sudah banyak kesusahan, akhirnya kasus ini selesai
+      juga... Syukur.</i>)
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: (<i>...haha, semoga bayaran saya cukup besar untuk menggantikan
+      uang yang saya berikan ke penghuni itu... jika tidak, nanti istri saya marah...</i>)
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: (<i>Ya, sebaiknya jangan dipikirkan dulu. Untuk sekarang... lanjut
+      ke kasus selanjutnya.</i>)
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 0}
+  _nextDialogue: {fileID: 0}
+  _flagType: 0
+  _flagIndex: 0

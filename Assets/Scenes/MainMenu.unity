@@ -1901,8 +1901,8 @@ MonoBehaviour:
   _glosariumNextLockedObject: {fileID: 1939537059}
   _glosariumPages:
   - {fileID: 11400000, guid: 2d2abc6a97ce5b7438624d7668fc2dfc, type: 2}
-  - {fileID: 11400000, guid: 7c617fcd110ecd74e91f960a06b470ba, type: 2}
   - {fileID: 11400000, guid: e28d092c62ffa33469acfe1bf66a2800, type: 2}
+  - {fileID: 11400000, guid: 7c617fcd110ecd74e91f960a06b470ba, type: 2}
 --- !u!1 &601266066
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Joystick">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AACABACIACRICAAEACBAASICAAEAADAKEQQCCAEAIAA=</HashCode>
+      <FileName>Assets\Joystick Pack\Scripts\Base\Joystick.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FixedJoystick">
+    <Position X="2.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ChoiceScriptable">
+    <Position X="19.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scriptable Objects\ChoiceScriptable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Choices" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DialogueScriptable">
+    <Position X="21.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAQAAAAAAAAAACQEABAAAAAAA=</HashCode>
+      <FileName>Assets\Scriptable Objects\DialogueScriptable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Lines" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GlosariumScriptable">
+    <Position X="17.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEQAAAAAAKAQAIAAACFAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Assets\Scriptable Objects\GlosariumScriptable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CameraController">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCAABCCAACAAAAAAIQAAIAAAAAAAAAACAACAAAAAAGA=</HashCode>
+      <FileName>Assets\Scripts\CameraController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DialogueManager">
+    <Position X="23.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GFAAAAAAQAAAAACBIAAIBAAAEAAAAACQACIAIAABgEA=</HashCode>
+      <FileName>Assets\Scripts\DialogueManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_currentDialogue" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FlagManager">
+    <Position X="17.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAACAAAAEAAAAAAQAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\FlagManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_objectiveManager" />
+      <Field Name="_flags" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GeneralGameManager">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQigoAQAACGAAAQACAWAGBAAEAKGQQgAIEAAADBEAAg=</HashCode>
+      <FileName>Assets\Scripts\GeneralGameManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_player" />
+      <Field Name="_camera" />
+      <Property Name="TeleportPoint" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GlosariumManager">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAEBISAAAIAAEAADACEAQAABAAAAAGAIAABAhAA=</HashCode>
+      <FileName>Assets\Scripts\GlosariumManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_glosariumPages" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="InteractionObject">
+    <Position X="2.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACAAAAAAIAAAAAAAIAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\InteractionObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_states" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MainMenuController">
+    <Position X="12" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEACAAAAQAAAAEkJAEBAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MainMenuController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovementTrigger">
+    <Position X="2.5" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="InteractionObject" FixedToPoint="true">
+      <Path>
+        <Point X="3.25" Y="4.319" />
+        <Point X="3.25" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MovementTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NotesManager">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgQAAAACAAEBAAAAAACIAIAAAgAAAAAAAAAgAAqgEA=</HashCode>
+      <FileName>Assets\Scripts\NotesManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectiveManager">
+    <Position X="14.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAACAAIAAgAAAIGAAAABBEA=</HashCode>
+      <FileName>Assets\Scripts\ObjectiveManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_objectives" />
+      <Field Name="_flagManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlayerSpriteSet">
+    <Position X="4.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAIAAAAAACAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PlayerBehavior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerBehavior">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCwACSCwACgAAABIAEUAoFIEAAAFEAACAQCIIACQQEA=</HashCode>
+      <FileName>Assets\Scripts\PlayerBehavior.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_currentSpriteSet" />
+      <Field Name="_joystick" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SaveData">
+    <Position X="9.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAACAAAAAAAAAAAgAAgAAAsIQ=</HashCode>
+      <FileName>Assets\Scripts\SaveManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SaveManager">
+    <Position X="9.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEUAAAAAAAAAAAAAAAAAAAAAAgAABABAUE=</HashCode>
+      <FileName>Assets\Scripts\SaveManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_currentSaveData" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TeleportPoint">
+    <Position X="7" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAgIACEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\TeleportPoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.ScriptableObject">
+    <Position X="19.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Struct Name="Choice">
+    <Position X="19.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACQAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scriptable Objects\ChoiceScriptable.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Line">
+    <Position X="21.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAgAAAAAAAAACAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Assets\Scriptable Objects\DialogueScriptable.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Flag">
+    <Position X="17.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAgAAAAAAAAAAEAgAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\FlagManager.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="InteractionState">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAQACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\InteractionObject.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="SubObjective">
+    <Position X="12" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAgAAACAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ObjectiveManager.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Objective">
+    <Position X="14.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAABAAAAAAAAABEAAAgAAAACABAAA=</HashCode>
+      <FileName>Assets\Scripts\ObjectiveManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="SubObjectives" />
+    </ShowAsAssociation>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

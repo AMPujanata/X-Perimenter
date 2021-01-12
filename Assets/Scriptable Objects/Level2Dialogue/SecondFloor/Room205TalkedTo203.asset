@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
-  m_Name: Room205TalkedTo203WithoutPriorTalking
+  m_Name: Room205TalkedTo203
   m_EditorClassIdentifier: 
   DialogueName: 
   Lines:
@@ -53,5 +53,5 @@ MonoBehaviour:
     lineSFX: {fileID: 0}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
-  _flagType: 0
-  _flagIndex: 0
+  _flagType: 1
+  _flagIndex: 8

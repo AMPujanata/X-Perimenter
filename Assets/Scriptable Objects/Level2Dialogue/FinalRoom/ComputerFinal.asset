@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: ComputerFinal
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: (<i>Sepertinya ada pesan baru dari pacarnya...</i>)
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: <nama pacar>
+    SpeakerLine: '"hah? kok kamu masih online... kamu udah balik dari rumah sakit
+      ya? cepat banget."'
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: <nama pacar>
+    SpeakerLine: '"PADAHAL SEHARUSNYA KAMU TERUS SAKIT-SAKIT!"'
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: <nama pacar>
+    SpeakerLine: '"BAGAIMANA RASANYA, DITUSUK OLEH PASANGANMU? SEPERTI YANG KAMU
+      LAKUKAN KE AKU."'
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: <nama pacar>
+    SpeakerLine: '"DIRACUNI DENGAN BAHAN YANG KAMU GUNAKAN TERUS UNTUK PEKERJAAN
+      BODOH KAMU? '
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: <nama pacar>
+    SpeakerLine: '"EMANG KAMU KIRA AKU NGGAK TAHU? DASAR PREMAN SELINGKUH!"'
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: <nama pacar>
+    SpeakerLine: '"SEMOGA KAMU MATI. KALAU TIDAK, AKU TERUS KE SANA MELAKUKAN SENDIRI!"'
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: (<i>...hah, dia kira "pacar"nya yang di depan komputer. Tapi kalau
+      seperti ini, artinya yang meracuni pacarnya sendiri...</i>)
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: (<i>Dengan apa? Pasti kue yang berbau sengat tadi. Dan dia bekerja
+      di bidang tekstil, jadi yang dicampuri ke dalam kue...</i>)
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: (<i>Ya... Rhodamin. Sudah pasti zat kimia tersebut... Gampang didapatkan,
+      mudah dicampuri, dan sangat berbahaya.</i>)
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: (<i>Saya sudah mendapatkan semua informasi yang saya butuhkan. Tapi
+      perlukah saya balas pacarnya?</i>)
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 0}
+  _nextDialogue: {fileID: 0}
+  _flagType: 0
+  _flagIndex: 0

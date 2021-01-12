@@ -17,10 +17,12 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: Baiklah. Terima kasih atas kerja sama anda.
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Penghuni 103
     SpeakerLine: Sama-sama, pak.
+    lineSFX: {fileID: 0}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
-  _flagType: 0
-  _flagIndex: 0
+  _flagType: 1
+  _flagIndex: 3

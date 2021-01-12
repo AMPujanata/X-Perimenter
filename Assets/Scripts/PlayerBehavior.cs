@@ -40,6 +40,7 @@ public class PlayerBehavior : MonoBehaviour
     private Direction _currentFoot;
     private PlayerSpriteSet _currentSpriteSet;
     private SpriteRenderer _spriteRenderer;
+    private MovementTrigger _lastMovementTrigger;
     private bool _isPlayerMoving;
     private float _boundLeft;
     private float _boundRight;
@@ -71,7 +72,26 @@ public class PlayerBehavior : MonoBehaviour
         {
             if(_movementType == MovementType.FREE)
             {
-                transform.position += Vector3.right * _joystick.Horizontal * _freeMoveSpeed * Time.deltaTime;
+                if (!_isPlayerMoving)
+                {
+                    if (_joystick.Vertical > 0)
+                    {
+                        StartCoroutine(MoveToTile(Direction.UP));
+                    }
+                    else if (_joystick.Horizontal > 0)
+                    {
+                        StartCoroutine(MoveToTile(Direction.RIGHT));
+                    }
+                    else if (_joystick.Horizontal < 0)
+                    {
+                        StartCoroutine(MoveToTile(Direction.LEFT));
+                    }
+                    else if (_joystick.Vertical < 0)
+                    {
+                        StartCoroutine(MoveToTile(Direction.DOWN));
+                    }
+                }
+                /*transform.position += Vector3.right * _joystick.Horizontal * _freeMoveSpeed * Time.deltaTime;
                 transform.position += Vector3.up * _joystick.Vertical * _freeMoveSpeed * Time.deltaTime;
                 Vector3 position = transform.position;
                 //code for not moving out of bounds here
@@ -83,7 +103,7 @@ public class PlayerBehavior : MonoBehaviour
                     position.y = _boundDown - _2DColliderBoundUp;
                 else if (position.y > _boundUp + _2DColliderBoundUp)
                     position.y = _boundUp + _2DColliderBoundUp;
-                transform.position = position;
+                transform.position = position;*/
             }
             else if(_movementType == MovementType.GRID)
             {
@@ -125,6 +145,7 @@ public class PlayerBehavior : MonoBehaviour
             if (overlapInteraction != null)
             {
                 overlapInteraction.Interact();
+                break;
             }
         }
     }
@@ -228,7 +249,25 @@ public class PlayerBehavior : MonoBehaviour
                 _currentFoot = Direction.LEFT;
         }
         _isPlayerMoving = false;
-        _spriteRenderer.sprite = _currentSpriteSet.idleSprite;
+        _spriteRenderer.sprite = _currentSpriteSet.idleSprite; 
+        //following code snippet is checking for movement trigger interactions. may be laggy
+        Collider2D[] overlap = Physics2D.OverlapAreaAll(_2DCollider.bounds.min, _2DCollider.bounds.max);
+        MovementTrigger movementTrigger = null;
+        for (int i = 0; i < overlap.Length; i++)
+        {
+            if (overlap[i].gameObject == gameObject)
+                continue;
+
+            movementTrigger = overlap[i].gameObject.GetComponent<MovementTrigger>();
+            if (movementTrigger != null)
+            {
+                if(movementTrigger != _lastMovementTrigger)
+                    movementTrigger.Interact();
+                _lastMovementTrigger = movementTrigger;
+                break;
+            }
+        }
+        _lastMovementTrigger = movementTrigger;
         yield break;
     }
 
@@ -273,6 +312,11 @@ public class PlayerBehavior : MonoBehaviour
         }
     }
 
+    public void SetDirection(Direction _direction)
+    {
+        _currentSpriteSet = DirectionToSpriteConverter(_direction);
+        _spriteRenderer.sprite = _currentSpriteSet.idleSprite;
+    }
     public PlayerSpriteSet DirectionToSpriteConverter(Direction _direction)
     {
         if (_direction == Direction.LEFT)

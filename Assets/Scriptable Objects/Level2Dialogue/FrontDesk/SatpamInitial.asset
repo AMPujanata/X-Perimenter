@@ -17,38 +17,47 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: Satpam
     SpeakerLine: Selamat siang, pak. Apakah ada yang bisa saya bantu?
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: Saya ingin menanyakan, apakah di mess ini ada yang namanya <nama
       pasien>?
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Satpam
     SpeakerLine: Sebelum saya jawab itu... anda siapa, ya?
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: Oh, maaf. Saya dari badan detektif cabang kota <nama kota>. Saya
       ingin melakukan penyelidikan tentang pembawaan <nama pasien> ke rumah sakit.
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Satpam
     SpeakerLine: Seperti itu, ya? Maaf, pak. Sebenarnya <nama pasien> ada di ruang
       nomor 201, tapi atas persetujuan kami, jika yang datang tidak kami kenal maka
       kami tidak akan memberikan akses.
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Satpam
     SpeakerLine: Tapi, jika bapak tetap ingin membantu, bapak mungkin bisa menanyakan
       teman-temannya di gedung ini.
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Satpam
     SpeakerLine: <nama pasien> memiliki banyak teman disini, sejauh ingatan saya.
       Tapi saya tidak ingat siapa saja yang kenal <nama pasien>.
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: Baiklah. Saya minta tolong untuk buka pintunya agar saya bisa masuk
       ke dalam.
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Satpam
     SpeakerLine: Silahkan.
+    lineSFX: {fileID: 0}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
-  _flagType: 0
+  _flagType: 1
   _flagIndex: 0

@@ -13,7 +13,9 @@ public class GeneralGameManager : MonoBehaviour
     [SerializeField] private GameObject _levelClearCanvas;
     [SerializeField] private Image _fadeImage;
     [SerializeField] private float _fadeTime;
+    [SerializeField] private int _lifes;
     [SerializeField] private UnityEvent _startOfLevelEvent;
+    [SerializeField] private UnityEvent _lifeDepletedEvent;
     [SerializeField] private AudioSource _audioSource;
     private bool _gameUICanvasWasActive;
     private bool _dialogueCanvasWasActive;
@@ -21,6 +23,15 @@ public class GeneralGameManager : MonoBehaviour
 	private float _previousDeltaScale;
     private PlayerBehavior _player;
     private CameraController _camera;
+
+    public TeleportPoint TeleportPoint
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -75,6 +86,13 @@ public class GeneralGameManager : MonoBehaviour
     {
 		Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void LoseLife()
+    {
+        _lifes--;
+        if (_lifes <= 0)
+            _lifeDepletedEvent.Invoke();
     }
 
     public void GameOver()
@@ -161,6 +179,7 @@ public class GeneralGameManager : MonoBehaviour
 
         TeleportPoint teleportPoint = teleportPointTransform.gameObject.GetComponent<TeleportPoint>();
         _player.transform.position = teleportPointTransform.position;
+        _player.SetDirection(teleportPoint.GetDirection());
         _player.SetBounds(teleportPoint.GetBound());
         _camera.SetBounds(teleportPoint.GetBound());
 

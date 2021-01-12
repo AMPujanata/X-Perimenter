@@ -16,17 +16,21 @@ MonoBehaviour:
   Lines:
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: Selamat siang, pak.
+    SpeakerLine: Selamat siang, bu.
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Penghuni 102
     SpeakerLine: Selamat siang. Ada apa, ya?
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: Saya dari badan detektif cabang <nama kota>. Apakah anda teman dari
       <nama pasien>?
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Penghuni 102
     SpeakerLine: Tidak, pak. Saya tidak pernah mengobrol dengannya.
+    lineSFX: {fileID: 0}
   _nextChoice: {fileID: 11400000, guid: a60dcdc1f182d1c4382f6f87d46cb76b, type: 2}
   _nextDialogue: {fileID: 0}
   _flagType: 0

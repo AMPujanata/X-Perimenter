@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: ComputerChat
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: (<i>Sepertinya ada pesan dari... pacarnya? Dari tiga hari yang lalu,
+      pada ulang tahunnya...</i>)
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: <nama pacar>
+    SpeakerLine: '"sayang, udah makan belum kue yg gw kasih?"'
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: <nama pasien>
+    SpeakerLine: '"Udah dong. Gw belum makan semuanya sih, tapi rasanya menarik.
+      Makasih udah bikin buat ulang tahun gw."'
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: <nama pacar>
+    SpeakerLine: '"wah, bagus deh. yaudah, semangat ya kerjanya! love u!"'
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: <nama pasien>
+    SpeakerLine: '"Makasih. Semoga kamu sukses juga ya, kerjanya."'
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: (<i>Hm... kuenya masih ada, tidak? Mungkin ada di dalam kulkas...</i>)
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 0}
+  _nextDialogue: {fileID: 0}
+  _flagType: 0
+  _flagIndex: 0

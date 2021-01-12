@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Room203SecondChoice
   m_EditorClassIdentifier: 
   Choices:
-  - ChoiceText: Kepentingan saya bukan urusan anda
+  - ChoiceText: Bukan urusan anda
     NextDialogue: {fileID: 11400000, guid: 1445e486398db7b4b93ece80ea848141, type: 2}
     ShouldTriggerAfterDialogueEvent: 0
-  - ChoiceText: Saya ingin mengetahui penyebab kasus
+  - ChoiceText: Ingin mengetahui akibat kasus
     NextDialogue: {fileID: 11400000, guid: eecfc19b5c469ef4585478d8a049b2b5, type: 2}
     ShouldTriggerAfterDialogueEvent: 0

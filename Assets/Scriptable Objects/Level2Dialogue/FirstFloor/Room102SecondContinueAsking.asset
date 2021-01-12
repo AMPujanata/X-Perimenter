@@ -17,12 +17,14 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: Apakah benar anda tidak pernah mengobrol dengan dia? Masa anda tidak
-      mengetahui apa-apa? Sudah, anda hanya perlu kasih tahu ke aku apa yang anda
+      mengetahui apa-apa? Sudah, anda hanya perlu kasih tahu ke saya apa yang anda
       ketahui!
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Penghuni 102
     SpeakerLine: S-Sudah! Jangan dekat-dekat lagi! SATPAAAAAAAAM!
+    lineSFX: {fileID: 0}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 11400000, guid: 8fac99a24858b5b4ead265e78c8357a6, type: 2}
-  _flagType: 0
-  _flagIndex: 0
+  _flagType: 1
+  _flagIndex: 1

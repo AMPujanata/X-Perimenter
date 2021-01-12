@@ -73,6 +73,8 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
         input = (eventData.position - position) / (radius * canvas.scaleFactor);
         FormatInput();
         HandleInput(input.magnitude, input.normalized, radius, cam);
+        //input.x = SnapFloat(input.x, AxisOptions.Horizontal); //these two lines are new additions
+        //input.y = SnapFloat(input.y, AxisOptions.Vertical);
         handle.anchoredPosition = input * radius * handleRange;
     }
 
@@ -105,14 +107,16 @@ public class Joystick : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
             float angle = Vector2.Angle(input, Vector2.up);
             if (snapAxis == AxisOptions.Horizontal)
             {
-                if (angle < 22.5f || angle > 157.5f)
+                //if (angle < 22.5f || angle > 157.5f) these are the original angles. this is to prevent diagonals
+                if(angle < 45f || angle > 135f)
                     return 0;
                 else
                     return (value > 0) ? 1 : -1;
             }
             else if (snapAxis == AxisOptions.Vertical)
             {
-                if (angle > 67.5f && angle < 112.5f)
+                //if (angle > 67.5f && angle < 112.5f)
+                if(angle > 45f && angle < 135f)
                     return 0;
                 else
                     return (value > 0) ? 1 : -1;

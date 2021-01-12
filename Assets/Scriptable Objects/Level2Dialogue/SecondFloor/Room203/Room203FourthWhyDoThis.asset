@@ -20,7 +20,7 @@ MonoBehaviour:
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Penghuni 203
-    SpeakerLine: Bukan urusan kamu? Kamu udah bayar, kan? Udah bagus tidak saya lapor
+    SpeakerLine: Bukan urusan kamu. Kamu udah bayar, kan? Udah bagus tidak saya lapor
       untuk mencoba uang suap.
     lineSFX: {fileID: 0}
   _nextChoice: {fileID: 11400000, guid: a2e7921f83d530a40b8504a7a1b611f9, type: 2}

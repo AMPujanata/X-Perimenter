@@ -17,20 +17,25 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: Satpam
     SpeakerLine: Ada apa!?
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Penghuni 102
     SpeakerLine: Tolong usir orang ini, dia mengganggu saya dan tidak mau pergi!
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Satpam
     SpeakerLine: Pak... apa yang anda lakukan? Anda tidak perlu mengganggu penghuni
-      sampai segini.
+      sampai mereka merasa terancam.
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Satpam
     SpeakerLine: Cepat keluar. Kalau tidak, nanti saya akan keluarkan secara paksa.
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: ...Baiklah.
+    lineSFX: {fileID: 0}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
-  _flagType: 0
-  _flagIndex: 0
+  _flagType: 1
+  _flagIndex: 2

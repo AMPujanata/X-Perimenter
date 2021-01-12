@@ -20,7 +20,7 @@ MonoBehaviour:
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Penghuni 202
-    SpeakerLine: Saya tadi bilang saya temannya, dapi sebenarnya saya tidak terlalu
+    SpeakerLine: Saya tadi bilang saya temannya, tapi sebenarnya saya tidak terlalu
       dekat dengannya. Dia orangnya sangat penutup.
     lineSFX: {fileID: 0}
   - _dontEditThis: 
@@ -34,5 +34,5 @@ MonoBehaviour:
     lineSFX: {fileID: 0}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
-  _flagType: 0
-  _flagIndex: 0
+  _flagType: 1
+  _flagIndex: 4
