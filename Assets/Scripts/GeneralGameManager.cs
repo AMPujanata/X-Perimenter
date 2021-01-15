@@ -104,6 +104,7 @@ public class GeneralGameManager : MonoBehaviour
     public void LevelCleared()
     {
         PlayerPrefs.SetInt("IsLevel" + SceneManager.GetActiveScene().buildIndex + "Cleared", 1);
+        PlayerPrefs.SetInt("ShouldOpenGlosarium", SceneManager.GetActiveScene().buildIndex);
         _levelClearCanvas.SetActive(true);
         Time.timeScale = 0f;
     }
@@ -118,6 +119,10 @@ public class GeneralGameManager : MonoBehaviour
         StartCoroutine(FadeOutProcess());
     }
 
+    public void FadeInAndOut(UnityEvent toExecute)
+    {
+        StartCoroutine(FadeInAndOutProcess(toExecute));
+    }
     public void TeleportPlayerHere(Transform teleportPointTransform)
     {
         StartCoroutine(TeleportPlayerHereProcess(teleportPointTransform));
@@ -156,6 +161,42 @@ public class GeneralGameManager : MonoBehaviour
         }
         c.a = 0;
         _fadeImage.color = c;
+        yield break;
+    }
+
+
+    public IEnumerator FadeInAndOutProcess(UnityEvent toExecute)
+    {
+        _player.ToggleMovement(false);
+
+        float timeElapsed = 0;
+        Color c = _fadeImage.color;
+        float alpha = 0;
+        while (timeElapsed < _fadeTime)
+        {
+            alpha = Mathf.Lerp(0, 1, timeElapsed / _fadeTime);
+            c.a = alpha;
+            _fadeImage.color = c;
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        c.a = 1;
+        _fadeImage.color = c;
+
+        toExecute.Invoke();
+
+        timeElapsed = 0;
+        while (timeElapsed < _fadeTime)
+        {
+            alpha = Mathf.Lerp(1, 0, timeElapsed / _fadeTime);
+            c.a = alpha;
+            _fadeImage.color = c;
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        c.a = 0;
+        _fadeImage.color = c;
+
         yield break;
     }
 

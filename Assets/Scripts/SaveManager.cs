@@ -28,7 +28,6 @@ public class SaveManager : MonoBehaviour
     [SerializeField] private PlayerBehavior _playerBehavior;
     [SerializeField] private CameraController _cameraController;
     [SerializeField] private FlagManager _flagManager;
-    [SerializeField] private NotesManager _notesManager;
     [SerializeField] private ObjectiveManager _objectiveManager;
 
     void Awake()
@@ -49,7 +48,6 @@ public class SaveManager : MonoBehaviour
         {
             _currentSaveData.flags[i] = _flags[i].IsFlagAchieved;
         }
-        _currentSaveData.notes = _notesManager.GetNotes();
         _currentSaveData.currentObjectiveIndex = _objectiveManager.GetObjectiveIndex();
         _currentSaveData.boundUp = _playerBehavior.GetBound("up");
         _currentSaveData.boundDown = _playerBehavior.GetBound("down");
@@ -76,7 +74,6 @@ public class SaveManager : MonoBehaviour
                 if (_currentSaveData.flags[i])
                     _flagManager.ActivateFlag(i);
             }
-            _notesManager.SetNotes(_currentSaveData.notes);
             _objectiveManager.SetCurrentObjective(_currentSaveData.currentObjectiveIndex);
             _playerBehavior.SetBounds(_currentSaveData.boundLeft, _currentSaveData.boundRight, _currentSaveData.boundUp, _currentSaveData.boundDown);
             _cameraController.SetBounds(_currentSaveData.boundLeft, _currentSaveData.boundRight, _currentSaveData.boundUp, _currentSaveData.boundDown);

@@ -32,7 +32,7 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: 
     SpeakerLine: -Penghuni membanting pintu di depan saya.-
-    lineSFX: {fileID: 0}
+    lineSFX: {fileID: 8300000, guid: d809d607448d49f4d8c668352f8a468c, type: 3}
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: (<i>Ah, sial. Saya dimain-mainkan saja... benar-benar membuat saya
@@ -40,5 +40,5 @@ MonoBehaviour:
     lineSFX: {fileID: 0}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
-  _flagType: 0
+  _flagType: 3
   _flagIndex: 0

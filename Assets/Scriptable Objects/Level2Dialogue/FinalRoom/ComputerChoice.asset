@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Choices:
   - ChoiceText: Akses dokumen
-    NextDialogue: {fileID: 0}
+    NextDialogue: {fileID: 11400000, guid: 2ed73d06ea156b1469d6fd162eef4bfb, type: 2}
     ShouldTriggerAfterDialogueEvent: 0
   - ChoiceText: Akses chat
-    NextDialogue: {fileID: 0}
+    NextDialogue: {fileID: 11400000, guid: 1b147e8d3f1ab324787f767321fbfee5, type: 2}
     ShouldTriggerAfterDialogueEvent: 0
   - ChoiceText: Akses catatan
-    NextDialogue: {fileID: 0}
+    NextDialogue: {fileID: 11400000, guid: 4c6f7fc40270d17459620a8894c921b7, type: 2}
     ShouldTriggerAfterDialogueEvent: 0

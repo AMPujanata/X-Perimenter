@@ -54,7 +54,7 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: Penghuni 203
     SpeakerLine: Hmm. Bukan hanya saya saja yang membenci dia. Orang di kamar 205
-      juga benci dengannya. Mungkin kalau kamu tanya, dia akan leih tahu tentang
+      juga benci dengannya. Mungkin kalau kamu tanya, dia akan lebih tahu tentang
       dia. Tentunya... jika dibayar.
     lineSFX: {fileID: 0}
   _nextChoice: {fileID: 11400000, guid: aab11be5e69265847a1c39c816abb5b8, type: 2}

@@ -15,8 +15,9 @@ MonoBehaviour:
   DialogueName: 
   Lines:
   - _dontEditThis: 
-    SpeakerName: Penghuni 205
-    SpeakerLine: Saya sudah tidak ada lagi info untuk anda. Semoga sukses, pak.
+    SpeakerName: Detektif
+    SpeakerLine: (<i>Saya sudah tidak ada urusan di sini. Sebaiknya saya pergi ke
+      ruang 201.</i>)
     lineSFX: {fileID: 0}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}

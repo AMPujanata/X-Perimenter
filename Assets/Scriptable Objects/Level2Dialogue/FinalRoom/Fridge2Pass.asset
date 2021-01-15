@@ -22,7 +22,7 @@ MonoBehaviour:
     SpeakerName: Detektif
     SpeakerLine: (<i>Itu dia! Akhirnya kulkas terbuka. Marilah saya lihat apa yang
       di dalam...</i>)
-    lineSFX: {fileID: 0}
+    lineSFX: {fileID: 8300000, guid: a8563525cb101e344a054d206738cd18, type: 3}
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: (<i>Sebagian besar makanan di minuman di sini tidak terlihat mencurigakan.
@@ -37,7 +37,7 @@ MonoBehaviour:
     SpeakerName: Detektif
     SpeakerLine: (<i>Warnanya memang aneh, tapi terlihat menarik...</i>)
     lineSFX: {fileID: 0}
-  _nextChoice: {fileID: 0}
+  _nextChoice: {fileID: 11400000, guid: 78297cedc7263c641b1978863fbf0ce8, type: 2}
   _nextDialogue: {fileID: 0}
   _flagType: 0
   _flagIndex: 0

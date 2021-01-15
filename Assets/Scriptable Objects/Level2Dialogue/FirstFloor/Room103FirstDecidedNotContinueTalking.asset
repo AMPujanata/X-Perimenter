@@ -17,11 +17,13 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: Baiklah, terima kasih atas bantuannya.
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: (<i>...Hm. Sepertinya tadi dia tahu lebih banyak lagi... Sebaiknya
       aku bertanya lebih ke orang ini.</i>)
+    lineSFX: {fileID: 0}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
-  _flagType: 0
+  _flagType: 3
   _flagIndex: 0

@@ -18,8 +18,8 @@ MonoBehaviour:
     SpeakerName: Detektif
     SpeakerLine: (<i>Ada beberapa hal di sini... mungkin saya bisa mendapatkan informasi
       dari salah satunya.</i>)
-    lineSFX: {fileID: 0}
-  _nextChoice: {fileID: 0}
+    lineSFX: {fileID: 8300000, guid: a8563525cb101e344a054d206738cd18, type: 3}
+  _nextChoice: {fileID: 11400000, guid: 61a0f1955cd217943b677d64c79f5cf7, type: 2}
   _nextDialogue: {fileID: 0}
   _flagType: 0
   _flagIndex: 0

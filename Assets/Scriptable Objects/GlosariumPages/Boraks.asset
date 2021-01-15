@@ -26,7 +26,7 @@ MonoBehaviour:
   - Penyegar
   - Mengurangi bakteri dan jamur
   WrongUse: Sebagai <color=red>pengawet makanan</color> seperti bakso, mie basah,
-    pisang molen, siomay, longtong, ketupat, dan pangsit.
+    pisang molen, siomay, lontong, ketupat, dan pangsit.
   ShortenedChemicalName: Boraks
   Effects:
   - <color=red>Badan terasa tidak enak</color>

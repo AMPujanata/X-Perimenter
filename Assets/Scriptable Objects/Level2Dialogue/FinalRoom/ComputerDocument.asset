@@ -17,7 +17,7 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: (<i>Hm... sepertinya dokumen-dokumen di komputer ini hanya berisi
-      informasi tentang pekerjaan dia.</i>)
+      informasi tentang pekerjaan dia di bidang tekstil.</i>)
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif

@@ -30,5 +30,5 @@ MonoBehaviour:
     lineSFX: {fileID: 0}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
-  _flagType: 0
+  _flagType: 3
   _flagIndex: 0

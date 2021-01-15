@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Choices:
   - ChoiceText: Balas pesan
-    NextDialogue: {fileID: 0}
+    NextDialogue: {fileID: 11400000, guid: 0c36ed09e87f3814eb0b180101207c1d, type: 2}
     ShouldTriggerAfterDialogueEvent: 0
   - ChoiceText: Tidak usah balas pesan
-    NextDialogue: {fileID: 0}
+    NextDialogue: {fileID: 11400000, guid: b3c2ca7e130f8ab46b7bb573d6f3c51a, type: 2}
     ShouldTriggerAfterDialogueEvent: 0

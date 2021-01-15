@@ -6,7 +6,7 @@ using System;
 
 public enum FlagType
 {
-    NONE, IMMEDIATE, AFTER
+    NONE, IMMEDIATE, AFTER, LOSE_LIFE
 }
 
 [Serializable]

@@ -13,7 +13,6 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private GameObject _choiceDialogueContainer;
     [SerializeField] private Button[] _choiceTextButtons;
     [SerializeField] private AudioClip _defaultDialogueAdvanceSound;
-    private List<int> _flagsToTriggerAfter;
     private DialogueScriptable _currentDialogue;
     private int currentIndex;
     private GeneralGameManager _generalGameManager;
@@ -24,7 +23,6 @@ public class DialogueManager : MonoBehaviour
         _generalGameManager = FindObjectOfType<GeneralGameManager>();
         _playerBehavior = FindObjectOfType<PlayerBehavior>();
         _fixedJoystick = FindObjectOfType<FixedJoystick>();
-		_flagsToTriggerAfter = new List<int>();
 	}
 	
     public void SetupDialogue(DialogueScriptable dialogueFormat)
@@ -69,14 +67,10 @@ public class DialogueManager : MonoBehaviour
         {
             if (_choiceDialogueContainer.activeSelf)
                 return;
-            if(_currentDialogue._flagType == FlagType.IMMEDIATE)
+            FlagManager flagManager = GetComponent<FlagManager>();
+            if (_currentDialogue._flagType == FlagType.IMMEDIATE)
             {
-                FlagManager flagManager = GetComponent<FlagManager>();
                 flagManager.ActivateFlag(_currentDialogue._flagIndex);
-            }
-            else if(_currentDialogue._flagType == FlagType.AFTER)
-            {
-                _flagsToTriggerAfter.Add(_currentDialogue._flagIndex);
             }
             if (_currentDialogue._nextChoice)
             {
@@ -88,19 +82,18 @@ public class DialogueManager : MonoBehaviour
             }
             else
             {
-                FlagManager flagManager = GetComponent<FlagManager>();
-				if(_flagsToTriggerAfter.Count != 0)
-				{
-					foreach(int flagToAdd in _flagsToTriggerAfter)
-					{
-						flagManager.ActivateFlag(_currentDialogue._flagIndex);
-					}
-					_flagsToTriggerAfter.Clear();
-				}
                 _dialogueContainer.SetActive(false);
                 _parentDialogueContainer.SetActive(false);
                 _generalGameManager.ToggleGameUI(true);
                 _playerBehavior.ToggleMovement(true);
+                if (_currentDialogue._flagType == FlagType.AFTER)
+                {
+                    flagManager.ActivateFlag(_currentDialogue._flagIndex);
+                }
+                else if (_currentDialogue._flagType == FlagType.LOSE_LIFE)
+                {
+                    _generalGameManager.LoseLife();
+                }
             }
         }
     }

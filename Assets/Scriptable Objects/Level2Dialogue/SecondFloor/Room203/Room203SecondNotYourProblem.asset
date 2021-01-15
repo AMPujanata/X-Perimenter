@@ -26,7 +26,7 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: 
     SpeakerLine: -Penghuni kamar menutup pintu secara kencang di depan muka saya.-
-    lineSFX: {fileID: 0}
+    lineSFX: {fileID: 8300000, guid: d809d607448d49f4d8c668352f8a468c, type: 3}
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: (<i>Sepertinya 203 memiliki rahasia yang dia sembunyikan... sayangnya
@@ -39,5 +39,5 @@ MonoBehaviour:
     lineSFX: {fileID: 0}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
-  _flagType: 0
+  _flagType: 3
   _flagIndex: 0

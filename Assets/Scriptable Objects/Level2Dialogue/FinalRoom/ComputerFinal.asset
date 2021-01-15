@@ -65,7 +65,7 @@ MonoBehaviour:
     SpeakerLine: (<i>Saya sudah mendapatkan semua informasi yang saya butuhkan. Tapi
       perlukah saya balas pacarnya?</i>)
     lineSFX: {fileID: 0}
-  _nextChoice: {fileID: 0}
+  _nextChoice: {fileID: 11400000, guid: 499c09629e96b4e4e9913131aac8b614, type: 2}
   _nextDialogue: {fileID: 0}
   _flagType: 0
   _flagIndex: 0

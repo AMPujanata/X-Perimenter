@@ -15,9 +15,9 @@ MonoBehaviour:
   DialogueName: 
   Lines:
   - _dontEditThis: 
-    SpeakerName: Penghuni 205
-    SpeakerLine: Hanya itu saja yang bisa saya kasih tahu, pak. Coba tanya ke ruang
-      203. Mungkin dia akan lebih tahu.
+    SpeakerName: Detektif
+    SpeakerLine: (<i>Tadinya dia katakan untuk berbicara dengan penghuni ruang 203
+      terlebih dahulu. Mungkin dia lebih dekat dengan <nama pasien>...?</i>)
     lineSFX: {fileID: 0}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}

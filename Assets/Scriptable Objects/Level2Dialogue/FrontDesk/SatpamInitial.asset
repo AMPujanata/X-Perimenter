@@ -41,12 +41,13 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: Satpam
     SpeakerLine: Tapi, jika bapak tetap ingin membantu, bapak mungkin bisa menanyakan
-      teman-temannya di gedung ini.
+      teman-temannya di gedung ini. Yang penting anda tidak melanggar ketentuan kami.
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Satpam
     SpeakerLine: <nama pasien> memiliki banyak teman disini, sejauh ingatan saya.
-      Tapi saya tidak ingat siapa saja yang kenal <nama pasien>.
+      Tapi saya tidak ingat siapa saja yang kenal <nama pasien>. Silahkan tanya,
+      tapi jangan sampai saya mendapatkan keluhan.
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
@@ -56,7 +57,7 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: Satpam
     SpeakerLine: Silahkan.
-    lineSFX: {fileID: 0}
+    lineSFX: {fileID: 8300000, guid: a8314f2ec2e96684797379827bb0e961, type: 3}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
   _flagType: 1

@@ -17,7 +17,7 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: Permisi! Saya ingin menanyakan sesuatu.
-    lineSFX: {fileID: 0}
+    lineSFX: {fileID: 8300000, guid: c8e749ad6b52eca44ba0ba98e3ce41d4, type: 3}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 11400000, guid: f77184e08e84c454a9954fceb9b239dd, type: 2}
   _flagType: 0

@@ -17,11 +17,11 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: Selamat siang.
-    lineSFX: {fileID: 0}
+    lineSFX: {fileID: 8300000, guid: c8e749ad6b52eca44ba0ba98e3ce41d4, type: 3}
   - _dontEditThis: 
     SpeakerName: Penghuni 205
     SpeakerLine: Siang. Ada apa?
-    lineSFX: {fileID: 0}
+    lineSFX: {fileID: 8300000, guid: e9a3403005d72bc4282c00e40d72388d, type: 3}
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: Tadi saya sudah bicara dengan penghuni ruang 203, dan dia janji

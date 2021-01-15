@@ -34,7 +34,7 @@ MonoBehaviour:
     SpeakerName: 
     SpeakerLine: -Badan saya jatuh ke lantai. Tenaga saya hilang seketika. Saya tidak
       bangun lagi...-
-    lineSFX: {fileID: 0}
+    lineSFX: {fileID: 8300000, guid: 025a77adfba55b5438f4b03cf08131c1, type: 3}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
   _flagType: 1

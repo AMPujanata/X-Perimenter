@@ -594,9 +594,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 20, y: -6.8, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1758171301}
   m_Father: {fileID: 1658033597}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &50082263
 MonoBehaviour:
@@ -611,11 +612,74 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _states:
-  - _stateName: 
-    _howToReachState: 
+  - _stateName: Initial
+    _howToReachState: Initial
     _interactionEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 261722169}
+          m_MethodName: SetupDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: bc64e33d976a76b419565d0d794982fa,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: DialogueScriptable, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _stateName: 1Pass
+    _howToReachState: Got one password but not the other
+    _interactionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 261722169}
+          m_MethodName: SetupDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 4dbd315a9aec7ed4fa7cd4bd81f5be07,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: DialogueScriptable, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _stateName: 2Pass
+    _howToReachState: Got both passwords.
+    _interactionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 261722169}
+          m_MethodName: SetupDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 15ed723c17c4eea4f8e88e25b02c5219,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: DialogueScriptable, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _stateName: AfterCheck
+    _howToReachState: Done with the fridge.
+    _interactionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 261722169}
+          m_MethodName: SetupDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 405d8400c9d180f4ba36079cbb7921a3,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: DialogueScriptable, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!61 &50082264
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -642,6 +706,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.16}
   m_EdgeRadius: 0
+--- !u!1 &50133533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 50133534}
+  m_Layer: 8
+  m_Name: MarkerCenter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &50133534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50133533}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1096593412}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &50626688
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,6 +865,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
+--- !u!1 &84945893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 84945894}
+  m_Layer: 8
+  m_Name: MarkerCenter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &84945894
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84945893}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 105326658}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &105326657
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,7 +923,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 20.8, y: -3.6, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 84945894}
   m_Father: {fileID: 1905699180}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1743,7 +1868,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &212073123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1941,6 +2066,7 @@ MonoBehaviour:
   _levelClearCanvas: {fileID: 1442150892}
   _fadeImage: {fileID: 2129821118}
   _fadeTime: 0.5
+  _lifes: 2
   _startOfLevelEvent:
     m_PersistentCalls:
       m_Calls:
@@ -1951,6 +2077,32 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 11400000, guid: 7befca0944ff0294d9af96d9cd70b81a,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: DialogueScriptable, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _lifeDepletedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 261722169}
+        m_MethodName: SetupDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d22518c2a05a3d4418e8a2f674640d5a,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: DialogueScriptable, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 261722168}
+        m_MethodName: FadeIn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2025,6 +2177,28 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 324020650}
+          m_MethodName: DisableObjectiveMarker
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 272648119}
+          m_MethodName: MoveObjectiveMarker
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1471423434}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - _dontChangeThis: 
     FlagName: Room102Pestered
     HowToActivateFlag: Continued asking 102 too much
@@ -2091,15 +2265,16 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_MethodName: 
-          m_Mode: 1
+        - m_Target: {fileID: 261722172}
+          m_MethodName: AddNote
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: Klien saya bekerja di bidang tekstil. Mungkin ada hubungan
+              antara bidangnya dan kecelakaannya...?
             m_BoolArgument: 0
           m_CallState: 2
   - _dontChangeThis: 
@@ -2120,15 +2295,16 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_MethodName: 
-          m_Mode: 1
+        - m_Target: {fileID: 261722172}
+          m_MethodName: AddNote
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 
+            m_StringArgument: Klien saya memiliki pacar, yang bekerja di bidang yang
+              sama dengan dia.
             m_BoolArgument: 0
           m_CallState: 2
   - _dontChangeThis: 
@@ -2176,6 +2352,29 @@ MonoBehaviour:
             m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 272648119}
+          m_MethodName: MoveObjectiveMarker
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 84945894}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 261722172}
+          m_MethodName: AddNote
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Pacar klien saya datang ke tempatnya 3 hari sebelum
+              hari ini.
             m_BoolArgument: 0
           m_CallState: 2
   - _dontChangeThis: 
@@ -2236,6 +2435,40 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 272648119}
+          m_MethodName: MoveObjectiveMarker
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1796441861}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 261722172}
+          m_MethodName: AddNote
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 3 hari sebelum hari ini adalah hari ulang tahun klien
+              saya, dan dia merayakannya dengan pacarnya.
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 261722172}
+          m_MethodName: AddNote
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Kunci ke ruang 201 tersembunyi di bawah karpet.
+            m_BoolArgument: 0
+          m_CallState: 2
   - _dontChangeThis: 
     FlagName: GotKeyUnderCarpet
     HowToActivateFlag: Got the key under the carpet.
@@ -2265,6 +2498,305 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 352433032}
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 272648119}
+          m_MethodName: DisableObjectiveMarker
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 808331794}
+          m_MethodName: MoveObjectiveMarker
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 910605715}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _dontChangeThis: 
+    FlagName: ComputerChecked
+    HowToActivateFlag: Checked computer for the first time.
+    IsFlagAchieved: 0
+    AfterFlagActivated:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1313717471}
+          m_MethodName: SwitchState
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _dontChangeThis: 
+    FlagName: ComputerPasswordGot
+    HowToActivateFlag: Obtained the password from the computer.
+    IsFlagAchieved: 0
+    AfterFlagActivated:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 808331794}
+          m_MethodName: MoveObjectiveMarker
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 50133534}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 50082263}
+          m_MethodName: SwitchState
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 261722170}
+          m_MethodName: ActivateFlag
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 15
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 261722172}
+          m_MethodName: AddNote
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Saya mendapatkan kode dari komputer. 1149.
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _dontChangeThis: 
+    FlagName: ClosetPasswordGot
+    HowToActivateFlag: Obtained the password from the closet.
+    IsFlagAchieved: 0
+    AfterFlagActivated:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 808331794}
+          m_MethodName: MoveObjectiveMarker
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 910605715}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1096593413}
+          m_MethodName: SwitchState
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 50082263}
+          m_MethodName: SwitchState
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 261722170}
+          m_MethodName: ActivateFlag
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 15
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 261722172}
+          m_MethodName: AddNote
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Saya mendapatkan kode dari komputer. 5125
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _dontChangeThis: 
+    FlagName: BothPasswordsGot
+    HowToActivateFlag: Obtained both passwords.
+    IsFlagAchieved: 0
+    AfterFlagActivated:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 808331794}
+          m_MethodName: MoveObjectiveMarker
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1758171301}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 50082263}
+          m_MethodName: SwitchState
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 261722172}
+          m_MethodName: AddNote
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Kedua kode dapat digabung menjadi satu. 11495125
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _dontChangeThis: 
+    FlagName: MessageReceived
+    HowToActivateFlag: Checked the cake in the fridge.
+    IsFlagAchieved: 0
+    AfterFlagActivated:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 808331794}
+          m_MethodName: MoveObjectiveMarker
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 910605715}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 50082263}
+          m_MethodName: SwitchState
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1313717471}
+          m_MethodName: SwitchState
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 261722172}
+          m_MethodName: AddNote
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Kue di dalam kulkas memiliki bau yang aneh, dan sepertinya
+              dimakan oleh klien saya.
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _dontChangeThis: 
+    FlagName: PlaceholderOnePassFlag
+    HowToActivateFlag: Get one of the passwords. Either one.
+    IsFlagAchieved: 0
+    AfterFlagActivated:
+      m_PersistentCalls:
+        m_Calls: []
+  - _dontChangeThis: 
+    FlagName: SatpamArrives
+    HowToActivateFlag: View one part of the ending cutscene.
+    IsFlagAchieved: 0
+    AfterFlagActivated:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2076278216}
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - _dontChangeThis: 
+    FlagName: LevelClear
+    HowToActivateFlag: ya did it
+    IsFlagAchieved: 0
+    AfterFlagActivated:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 261722168}
+          m_MethodName: LevelCleared
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &261722171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2281,10 +2813,173 @@ MonoBehaviour:
   _objectiveText: {fileID: 440561907}
   _objectives:
   - _dontEditThis: 
-    ObjectiveName: 
-    ObjectiveDescription: Placeholder
+    ObjectiveName: Initial
+    ObjectiveDescription: Temukan cara untuk masuk ke dalam mess.
     type: 1
     CorrespondingFlagIndex: 0
+    AfterObjectiveAchieved:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 261722171}
+          m_MethodName: SetCurrentObjective
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    SubObjectives: []
+  - _dontEditThis: 
+    ObjectiveName: InformationGathering
+    ObjectiveDescription: Cari informasi tentang <nama pasien> dengan menanyakan
+      penghuni bangunan.
+    type: 1
+    CorrespondingFlagIndex: 6
+    AfterObjectiveAchieved:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 261722171}
+          m_MethodName: SetCurrentObjective
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    SubObjectives: []
+  - _dontEditThis: 
+    ObjectiveName: TalkTo205
+    ObjectiveDescription: Bicara dengan penghuni kamar 205 untuk mengali informasi
+      lebih dalam.
+    type: 1
+    CorrespondingFlagIndex: 8
+    AfterObjectiveAchieved:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 261722171}
+          m_MethodName: SetCurrentObjective
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    SubObjectives: []
+  - _dontEditThis: 
+    ObjectiveName: KeyFinding
+    ObjectiveDescription: Temukan kunci ke dalam kamar 201, di bawah karpet.
+    type: 1
+    CorrespondingFlagIndex: 9
+    AfterObjectiveAchieved:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 261722171}
+          m_MethodName: SetCurrentObjective
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    SubObjectives: []
+  - _dontEditThis: 
+    ObjectiveName: SearchRoom
+    ObjectiveDescription: 'Cari informasi dan bukti di dalam kamar 201, tentang cara
+      dia teracuni. '
+    type: 1
+    CorrespondingFlagIndex: 15
+    AfterObjectiveAchieved:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 261722171}
+          m_MethodName: SetCurrentObjective
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    SubObjectives: []
+  - _dontEditThis: 
+    ObjectiveName: PasswordSearch
+    ObjectiveDescription: Temukan password sepenuhnya.
+    type: 0
+    CorrespondingFlagIndex: 0
+    AfterObjectiveAchieved:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 261722171}
+          m_MethodName: SetCurrentObjective
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 261722169}
+          m_MethodName: SetupDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 51e43fefcbed67344a7e7ab2bb4de75d,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: DialogueScriptable, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    SubObjectives:
+    - _dontEditThis: 
+      SubObjectiveName: ComputerPasswordGet
+      SubObjectiveDescription: Get one part of the password.
+      CorrespondingFlagIndex: 11
+    - _dontEditThis: 
+      SubObjectiveName: ClosetPasswordGet
+      SubObjectiveDescription: Get the other part of the password.
+      CorrespondingFlagIndex: 12
+  - _dontEditThis: 
+    ObjectiveName: UsePassword
+    ObjectiveDescription: Gunakan password yang ditemukan untuk mencari bukti.
+    type: 1
+    CorrespondingFlagIndex: 14
+    AfterObjectiveAchieved:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 261722171}
+          m_MethodName: SetCurrentObjective
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    SubObjectives: []
+  - _dontEditThis: 
+    ObjectiveName: CheckComputerAgain
+    ObjectiveDescription: Cek pesan baru yang didapatkan di komputer.
+    type: 1
+    CorrespondingFlagIndex: 17
     AfterObjectiveAchieved:
       m_PersistentCalls:
         m_Calls: []
@@ -2340,6 +3035,98 @@ Transform:
   m_Father: {fileID: 1064340045}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &272648117
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1905699180}
+    m_Modifications:
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603493567010948924, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_Name
+      value: ObjectiveMarker
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603493567010948924, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9a0bd9e0e7f27146a1b1d61ce959406, type: 3}
+--- !u!4 &272648118 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+    type: 3}
+  m_PrefabInstance: {fileID: 272648117}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &272648119 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8123573254815036615, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+    type: 3}
+  m_PrefabInstance: {fileID: 272648117}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e3688cb8c7ffc245b374aecf9f78648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &294576022
 GameObject:
   m_ObjectHideFlags: 0
@@ -2381,7 +3168,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 294576022}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4abb7be5982f9c40933ac261fb36bf4, type: 3}
+  m_Script: {fileID: 11500000, guid: d56bd9195e0b5a148bbd903b2264de55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _states:
@@ -2396,6 +3183,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 57634858}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 261722168}
+          m_MethodName: PlayAudioClip
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: 23449d07a6ffc914f9ef0c9c63b031e7,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -2541,6 +3340,93 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.64}
   m_EdgeRadius: 0
+--- !u!1001 &324020648
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 931421360}
+    m_Modifications:
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 35.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -22.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603493567010948924, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_Name
+      value: ObjectiveMarker
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9a0bd9e0e7f27146a1b1d61ce959406, type: 3}
+--- !u!4 &324020649 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+    type: 3}
+  m_PrefabInstance: {fileID: 324020648}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &324020650 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8123573254815036615, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+    type: 3}
+  m_PrefabInstance: {fileID: 324020648}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e3688cb8c7ffc245b374aecf9f78648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &331459165
 GameObject:
   m_ObjectHideFlags: 0
@@ -2978,7 +3864,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.6, y: -4, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1796441861}
   m_Father: {fileID: 1905699180}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3103,6 +3990,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 998999319}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 261722168}
+          m_MethodName: PlayAudioClip
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: a1a8f50a993f8b44bbb4f2483a2e75a3,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -3528,7 +4427,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 42703d29e73da684b97ef05f7afc3cbf, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6dd35caa0ad09c3438f2da95fbd1b847, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3689,7 +4588,6 @@ MonoBehaviour:
       type: 3}
     rightFootSprite: {fileID: -4925106485761691155, guid: 7ffa6128ef91e5442b1832ed4663288f,
       type: 3}
-  _lastMovementTrigger: {fileID: 0}
 --- !u!212 &431916496
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4230,6 +5128,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 1743097879}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 261722168}
+          m_MethodName: PlayAudioClip
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: e9a3403005d72bc4282c00e40d72388d,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -5582,7 +6492,7 @@ Transform:
   - {fileID: 1576071852}
   - {fileID: 296570835}
   m_Father: {fileID: 1658033597}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &612031481
 GameObject:
@@ -6529,6 +7439,98 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 794114080}
   m_CullTransparentMesh: 0
+--- !u!1001 &808331792
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1658033597}
+    m_Modifications:
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603493567010948924, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_Name
+      value: ObjectiveMarker
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603493567010948924, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f9a0bd9e0e7f27146a1b1d61ce959406, type: 3}
+--- !u!4 &808331793 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1643308097607487860, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+    type: 3}
+  m_PrefabInstance: {fileID: 808331792}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &808331794 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8123573254815036615, guid: f9a0bd9e0e7f27146a1b1d61ce959406,
+    type: 3}
+  m_PrefabInstance: {fileID: 808331792}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e3688cb8c7ffc245b374aecf9f78648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &817332582
 GameObject:
   m_ObjectHideFlags: 0
@@ -6836,7 +7838,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 885977171}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.6, y: -7.6, z: 0}
+  m_LocalPosition: {x: 23.6, y: -8.4, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 1905699180}
@@ -7017,6 +8019,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902167087}
   m_CullTransparentMesh: 0
+--- !u!1 &910605714
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 910605715}
+  m_Layer: 8
+  m_Name: MarkerCenter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &910605715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910605714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.24, y: 0.32, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1313717470}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &911129978
 GameObject:
   m_ObjectHideFlags: 0
@@ -7086,7 +8118,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Balik Ke Menu
+  m_Text: Lihat Glosarium
 --- !u!222 &911129981
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7128,6 +8160,7 @@ Transform:
   - {fileID: 391316296}
   - {fileID: 345853956}
   - {fileID: 381208094}
+  - {fileID: 324020649}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7723,6 +8756,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022886723}
   m_CullTransparentMesh: 0
+--- !u!1 &1032344157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1032344158}
+  - component: {fileID: 1032344159}
+  m_Layer: 8
+  m_Name: FinalRoomBound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1032344158
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032344157}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1658033597}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 18.8, y: -9.2}
+  m_SizeDelta: {x: 15.2, y: 15.2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!61 &1032344159
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032344157}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 15.2, y: 15.2}
+  m_EdgeRadius: 0
 --- !u!1 &1047631619
 GameObject:
   m_ObjectHideFlags: 0
@@ -8260,9 +9355,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 22.4, y: -6.8, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 50133534}
   m_Father: {fileID: 1658033597}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1096593413
 MonoBehaviour:
@@ -8277,11 +9373,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _states:
-  - _stateName: 
-    _howToReachState: 
+  - _stateName: Initial
+    _howToReachState: Initial
     _interactionEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 261722169}
+          m_MethodName: SetupDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: d72c369d75c6b46488abf91ec6d2ebc3,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: DialogueScriptable, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _stateName: AfterChecking
+    _howToReachState: Saw the code in the closet.
+    _interactionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 261722169}
+          m_MethodName: SetupDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 4e812ee51a613524ba41fe20db24a830,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: DialogueScriptable, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!61 &1096593414
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8806,7 +9931,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -1727048798720144719, guid: c0e6eb949543afa45940cdf0abe2d813,
+  m_Sprite: {fileID: 8565530952892456220, guid: 3330dc57a50950141b6bb8475d1e3610,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9454,9 +10579,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 13.2, y: -14.8, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 910605715}
   m_Father: {fileID: 1658033597}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1313717471
 MonoBehaviour:
@@ -9471,11 +10597,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _states:
-  - _stateName: 
-    _howToReachState: 
+  - _stateName: Initial
+    _howToReachState: Initial
     _interactionEvent:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 261722169}
+          m_MethodName: SetupDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: a7fc19471edcec04ab8ef68efe874895,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: DialogueScriptable, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _stateName: OnceChecked
+    _howToReachState: Player has checked computer before.
+    _interactionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 261722169}
+          m_MethodName: SetupDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: ec2dc733cd60aed419fdb02e71b81d32,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: DialogueScriptable, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - _stateName: FinalMessage
+    _howToReachState: Checked the cake in the fridge
+    _interactionEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 261722169}
+          m_MethodName: SetupDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 539833cb5b8ad13408c5316dac402873,
+              type: 2}
+            m_ObjectArgumentAssemblyTypeName: DialogueScriptable, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!61 &1313717472
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9543,7 +10715,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1335595166}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4abb7be5982f9c40933ac261fb36bf4, type: 3}
+  m_Script: {fileID: 11500000, guid: d56bd9195e0b5a148bbd903b2264de55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _states:
@@ -9558,6 +10730,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 885977172}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 261722168}
+          m_MethodName: PlayAudioClip
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: 23449d07a6ffc914f9ef0c9c63b031e7,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -9731,7 +10915,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 11.2, y: -3.6, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1471423434}
   m_Father: {fileID: 1905699180}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10086,6 +11271,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466247966}
   m_CullTransparentMesh: 0
+--- !u!1 &1471423433
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1471423434}
+  m_Layer: 8
+  m_Name: MarkerCenter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1471423434
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471423433}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.48, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1396190834}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1526316802
 GameObject:
   m_ObjectHideFlags: 0
@@ -10230,7 +11445,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -1727048798720144719, guid: c0e6eb949543afa45940cdf0abe2d813,
+  m_Sprite: {fileID: -7840696613844023035, guid: 3330dc57a50950141b6bb8475d1e3610,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10987,12 +12202,15 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1106940832}
+  - {fileID: 2076278218}
   - {fileID: 609388703}
   - {fileID: 1845717879}
   - {fileID: 1313717470}
   - {fileID: 50082262}
   - {fileID: 1096593412}
   - {fileID: 1743097879}
+  - {fileID: 1032344158}
+  - {fileID: 808331793}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11405,7 +12623,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 1658033597}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1743097880
 MonoBehaviour:
@@ -11419,7 +12637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdab41077527da143b69bbe12b634c51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _associatedBound: {fileID: 624958834}
+  _associatedBound: {fileID: 1032344159}
   _afterTeleportDirection: 3
 --- !u!61 &1743097881
 BoxCollider2D:
@@ -11447,6 +12665,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
   m_EdgeRadius: 0
+--- !u!1 &1758171300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1758171301}
+  m_Layer: 8
+  m_Name: MarkerCenter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1758171301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758171300}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.32, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 50082262}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1775322925
 GameObject:
   m_ObjectHideFlags: 0
@@ -11521,6 +12769,36 @@ RectTransform:
   m_AnchoredPosition: {x: 5, y: -5}
   m_SizeDelta: {x: 15, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1796441860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1796441861}
+  m_Layer: 8
+  m_Name: MarkerCenter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1796441861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796441860}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.24, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 352433035}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1800584487
 GameObject:
   m_ObjectHideFlags: 0
@@ -11907,7 +13185,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 1658033597}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1845717880
 MonoBehaviour:
@@ -11933,6 +13211,18 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 1541743034}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 261722168}
+          m_MethodName: PlayAudioClip
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: e9a3403005d72bc4282c00e40d72388d,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -12515,6 +13805,7 @@ Transform:
   - {fileID: 885977172}
   - {fileID: 1541743034}
   - {fileID: 624958833}
+  - {fileID: 272648118}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14011,6 +15302,88 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067253154}
   m_CullTransparentMesh: 0
+--- !u!1 &2076278216
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2076278218}
+  - component: {fileID: 2076278217}
+  m_Layer: 0
+  m_Name: Satpam
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!212 &2076278217
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076278216}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 8565530952892456220, guid: 3330dc57a50950141b6bb8475d1e3610,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.32, y: 0.48}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &2076278218
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076278216}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16, y: -7.6, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1658033597}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2084102617
 GameObject:
   m_ObjectHideFlags: 0

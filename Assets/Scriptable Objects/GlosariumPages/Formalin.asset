@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChemicalName: Formalin (CH<sub>2</sub>O)
   ChemicalPicture: {fileID: 21300000, guid: 01f2e464e00d6144d9affa3790d8b608, type: 3}
-  IUPACName: Formaldehyde atau Methanal
+  IUPACName: Formaldehyde atau Methanol
   OtherNames: Formol, Oxymethylene, Formoform, Superlysoform, Paraforin, dll.
   Characteristics: Bentuk padatnya berwarna putih. Bentuk gasnya dan bentuk cairnya
     tidak berwarna.

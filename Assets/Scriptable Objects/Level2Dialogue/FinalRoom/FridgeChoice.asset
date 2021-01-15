@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Choices:
   - ChoiceText: Teliti kue
-    NextDialogue: {fileID: 0}
+    NextDialogue: {fileID: 11400000, guid: fcf21a007f8a69d42a0316fb4a2f8ab1, type: 2}
     ShouldTriggerAfterDialogueEvent: 0
   - ChoiceText: Makan kue
-    NextDialogue: {fileID: 0}
+    NextDialogue: {fileID: 11400000, guid: dd6c2ded2db42e34e9bed3ab735b5d36, type: 2}
     ShouldTriggerAfterDialogueEvent: 0

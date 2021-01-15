@@ -69,7 +69,7 @@ public class ObjectiveManager : MonoBehaviour
             bool allSubObjectivesAchieved = true;
             foreach(SubObjective sub in _currentObjective.SubObjectives)
             {
-                if (_flagManager.GetFlagBool(sub.CorrespondingFlagIndex))
+                if (!_flagManager.GetFlagBool(sub.CorrespondingFlagIndex))
                     allSubObjectivesAchieved = false;
             }
             if (allSubObjectivesAchieved)

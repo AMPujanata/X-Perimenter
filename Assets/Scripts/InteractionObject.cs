@@ -28,4 +28,5 @@ public class InteractionObject : MonoBehaviour
     {
         _stateIndex = stateIndex;
     }
+
 }

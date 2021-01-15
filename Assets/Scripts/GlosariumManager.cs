@@ -54,6 +54,13 @@ public class GlosariumManager : MonoBehaviour
 		}
         _glosariumIndex = 0;
         _currentGlosarium = _activeGlosariumPages[_glosariumIndex];
+
+        if(PlayerPrefs.GetInt("ShouldOpenGlosarium", 0) >= 1)
+        {
+            _glosariumIndex = PlayerPrefs.GetInt("ShouldOpenGlosarium") - 1;
+            _glosariumButton.onClick.Invoke();
+            PlayerPrefs.SetInt("ShouldOpenGlosarium", 0);
+        }
     }
 
 

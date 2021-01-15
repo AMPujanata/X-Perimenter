@@ -38,6 +38,6 @@ MonoBehaviour:
       sudah terkunci.</i>
     lineSFX: {fileID: 0}
   _nextChoice: {fileID: 0}
-  _nextDialogue: {fileID: 0}
+  _nextDialogue: {fileID: 11400000, guid: b3c2ca7e130f8ab46b7bb573d6f3c51a, type: 2}
   _flagType: 0
   _flagIndex: 0

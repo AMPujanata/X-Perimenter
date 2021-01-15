@@ -22,7 +22,7 @@ MonoBehaviour:
     SpeakerName: Detektif
     SpeakerLine: (<i>Akhirnya, saya bisa mengungkap kebenaran. Apa yang sebenarnya
       terjadi...?</i>)
-    lineSFX: {fileID: 0}
+    lineSFX: {fileID: 8300000, guid: a8314f2ec2e96684797379827bb0e961, type: 3}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
   _flagType: 1
