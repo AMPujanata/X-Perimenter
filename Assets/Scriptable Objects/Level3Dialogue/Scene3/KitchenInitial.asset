@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: KitchenInitial
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Deni
+    SpeakerLine: Ini ruangan dapur. Ibu lihat tidak pintu di depan sana? Itu pintu
+      yang selalu terkunci.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Deni
+    SpeakerLine: Mungkin ada suatu cara untuk membuka pintu tersebut. Tapi tidak
+      ada lubang untuk kunci...
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Kamu mengingat apapun yang mungkin bisa membantu, tidak? Seperti
+      hal-hal aneh yang terjadi di dapur ini?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Deni
+    SpeakerLine: Hm... Saya pernah melihat seseorang menyalakan kompor dan keran
+      di dapur secara tiba-tiba. Terlihatnya dia sangat buru-buru... tapi bahkan
+      setelah itu, dia tidak masuk ke pintu.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Terima kasih. Sepertinya saya ada ide cara membuka pintu tersebut...
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 0}
+  _nextDialogue: {fileID: 0}
+  _flagType: 1
+  _flagIndex: 7

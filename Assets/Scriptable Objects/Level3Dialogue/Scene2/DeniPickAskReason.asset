@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: DeniPickAskReason
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Kenapa saya harus memberikan anda kartu pengenal?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penjaga Kasir
+    SpeakerLine: Tolong percaya dengan saya, bu. Saya tidak akan melakukan apa-apa
+      dengan ibu.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penjaga Kasir
+    SpeakerLine: Kalau ibu tidak bisa menunjukkan bahwa anda benar detektif, saya
+      akan pulang saja, dan ibu tidak akan mendapatkan informasi yang dibutuhkan.
+      Semudah itu.
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 11400000, guid: 8d51e3de0fa22144abd00b0c88bc1b16, type: 2}
+  _nextDialogue: {fileID: 0}
+  _flagType: 0
+  _flagIndex: 0

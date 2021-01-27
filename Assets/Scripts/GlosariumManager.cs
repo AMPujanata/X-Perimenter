@@ -63,13 +63,6 @@ public class GlosariumManager : MonoBehaviour
         }
     }
 
-
-    public void SetupGlosarium()
-    {
-        _glosariumIndex = 0;
-        DisplayGlosarium();
-    }
-
     public void DisplayGlosarium()
     {
         _currentGlosarium = _activeGlosariumPages[_glosariumIndex];
@@ -134,5 +127,10 @@ public class GlosariumManager : MonoBehaviour
     {
         _glosariumIndex -= 1;
         DisplayGlosarium();
+    }
+
+    public void ResetIndex()
+    {
+        _glosariumIndex = 0;
     }
 }

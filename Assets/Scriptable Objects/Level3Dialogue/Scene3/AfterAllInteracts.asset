@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: AfterAllInteracts
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Deni
+    SpeakerLine: Itu dia! Pintunya sudah terbuka secara tiba-tiba.
+    lineSFX: {fileID: 8300000, guid: e9a3403005d72bc4282c00e40d72388d, type: 3}
+  - _dontEditThis: 
+    SpeakerName: Deni
+    SpeakerLine: Mari kita langsung bergegas ke dalam.
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 0}
+  _nextDialogue: {fileID: 0}
+  _flagType: 1
+  _flagIndex: 29

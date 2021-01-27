@@ -19,30 +19,30 @@ MonoBehaviour:
     SpeakerLine: (<i>Sepertinya ada pesan baru dari pacarnya...</i>)
     lineSFX: {fileID: 0}
   - _dontEditThis: 
-    SpeakerName: <nama pacar>
+    SpeakerName: Nina
     SpeakerLine: '"hah? kok kamu masih online... kamu udah balik dari rumah sakit
       ya? cepat banget."'
     lineSFX: {fileID: 0}
   - _dontEditThis: 
-    SpeakerName: <nama pacar>
+    SpeakerName: Nina
     SpeakerLine: '"PADAHAL SEHARUSNYA KAMU TERUS SAKIT-SAKIT!"'
     lineSFX: {fileID: 0}
   - _dontEditThis: 
-    SpeakerName: <nama pacar>
+    SpeakerName: Nina
     SpeakerLine: '"BAGAIMANA RASANYA, DITUSUK OLEH PASANGANMU? SEPERTI YANG KAMU
       LAKUKAN KE AKU."'
     lineSFX: {fileID: 0}
   - _dontEditThis: 
-    SpeakerName: <nama pacar>
+    SpeakerName: Nina
     SpeakerLine: '"DIRACUNI DENGAN BAHAN YANG KAMU GUNAKAN TERUS UNTUK PEKERJAAN
       BODOH KAMU? '
     lineSFX: {fileID: 0}
   - _dontEditThis: 
-    SpeakerName: <nama pacar>
+    SpeakerName: Nina
     SpeakerLine: '"EMANG KAMU KIRA AKU NGGAK TAHU? DASAR PREMAN SELINGKUH!"'
     lineSFX: {fileID: 0}
   - _dontEditThis: 
-    SpeakerName: <nama pacar>
+    SpeakerName: Nina
     SpeakerLine: '"SEMOGA KAMU MATI. KALAU TIDAK, AKU TERUS KE SANA MELAKUKAN SENDIRI!"'
     lineSFX: {fileID: 0}
   - _dontEditThis: 

@@ -39,11 +39,6 @@ public class ObjectiveManager : MonoBehaviour
     private Objective _currentObjective;
     private int _objectiveIndex = 0;
 
-    void Awake()
-    {
-        SetCurrentObjective(0);
-    }
-
     public void SetCurrentObjective(int index)
     {
         _objectiveIndex = index;
@@ -89,6 +84,10 @@ public class ObjectiveManager : MonoBehaviour
         temporaryObjectiveText += objective.ObjectiveDescription + "\n";
         foreach(SubObjective sub in objective.SubObjectives)
         {
+            if(sub.SubObjectiveDescription == "")
+            {
+                continue;
+            }
             if (_flagManager.GetFlagBool(sub.CorrespondingFlagIndex))
             {
                 temporaryObjectiveText += "<color=red>- " + sub.SubObjectiveDescription + "</color>" + "\n";

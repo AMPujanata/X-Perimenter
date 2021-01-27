@@ -16,12 +16,14 @@ MonoBehaviour:
   Lines:
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: Seorang pekerja dibawa ke rumah sakit setelah mengalami kesakitan
-      seperti keracunan, tugasku adalah mencari tahu apa penyebab keracunan tersebut.
+    SpeakerLine: Saya datang ke tempat ini atas permintaan klien saya, Dimas. Sepertinya
+      dia keracunan, dan dibawa ke rumah sakit...
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: Yang baru kuketahui dia tinggal di sebuah mess, didalam ada satpam
-      yang sedang berjaga, mungkin aku bertanya-tanya dulu
+    SpeakerLine: Yang baru kuketahui hanya bahwa dia tinggal di sebuah mess. Di dalam
+      ada satpam yang sedang berjaga, mungkin aku bertanya-tanya dulu.
+    lineSFX: {fileID: 0}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}
   _flagType: 0

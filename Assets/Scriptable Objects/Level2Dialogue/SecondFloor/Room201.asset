@@ -16,7 +16,7 @@ MonoBehaviour:
   Lines:
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: Sepertinya ini kamar <nama pasien>... Pintunya terkunci.
+    SpeakerLine: Sepertinya ini kamar Dimas... Pintunya terkunci.
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif

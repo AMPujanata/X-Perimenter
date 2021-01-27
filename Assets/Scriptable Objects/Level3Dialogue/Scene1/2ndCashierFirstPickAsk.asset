@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: 2ndCashierFirstPickAsk
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Permisi, mas.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penjaga Kasir
+    SpeakerLine: Hm? Ada yang bisa saya bantu, bu?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Apakah anda sudah lama bekerja di sini?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penjaga Kasir
+    SpeakerLine: Untuk apa anda menanyakan itu, bu?
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 11400000, guid: 3e0afc015776f4244a51f83d12edea51, type: 2}
+  _nextDialogue: {fileID: 0}
+  _flagType: 0
+  _flagIndex: 0

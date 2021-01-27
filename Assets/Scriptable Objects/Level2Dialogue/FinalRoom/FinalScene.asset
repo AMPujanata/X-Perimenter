@@ -30,7 +30,7 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: Lain kali... lakukan pekerjaanmu secara benar, ya? Karena kelalaianmu,
-      seseorang mati di mess ini.
+      seseorang di mess ini jadi dibawa ke rumah sakit.
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Satpam

@@ -19,28 +19,27 @@ MonoBehaviour:
     SpeakerLine: ...
     lineSFX: {fileID: 0}
   - _dontEditThis: 
-    SpeakerName: Satpam
-    SpeakerLine: Permisi, pak. Saya mendapatkan keluhan dari penghuni bangunan ini
-      bahwa anda mengangu mereka.
-    lineSFX: {fileID: 0}
-  - _dontEditThis: 
-    SpeakerName: Satpam
-    SpeakerLine: Saya sudah bolehkan anda masuk ke dalam mess ini dengan satu ketentuan,
-      dan anda gagal mengikuti ketentuan itu.
-    lineSFX: {fileID: 0}
-  - _dontEditThis: 
-    SpeakerName: Satpam
-    SpeakerLine: Mohon keluar. Kasus apapun yang ingin anda investigasi, nanti polisi
-      akan urus.
+    SpeakerName: Detektif
+    SpeakerLine: (<i>Ugh, saya sudah mencoba memecahkan kasus ini, tapi sepertinya
+      saya sudah kehilangan petunjuk...</i>)
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: ...Baik, pak.
+    SpeakerLine: (<i>...Apa yang seharusnya saya lakukan? Ayo, pasti masih ada lagi
+      yang bisa saya lakukan... tapi apa?</i>)
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Satpam
+    SpeakerLine: Permisi, pak. Anda sepertinya sudah selesai di sini, bukan? Anda
+      daritadi berdiri bengong.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Satpam
+    SpeakerLine: Kalau sudah, sebaiknya anda pergi. Perjanjian kami selesai di sini.
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: (<i>Ugh, saya terlalu banyak berkeliaran, kebingungan, dan mengganggu
-      penghuni... seharusnya saya tegas dan jelas...</i>)
+    SpeakerLine: ...Baiklah, pak.
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif

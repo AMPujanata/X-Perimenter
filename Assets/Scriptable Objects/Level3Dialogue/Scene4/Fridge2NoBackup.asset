@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: Fridge2NoBackup
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Ah! Sepertinya di sini ada... ikan di dalam cairan? Tunggu...
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Cairan ini formalin! Ternyata makanan mereka dipreservasi menggunakan
+      bahan-bahan kimia yang berbahaya.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Deni
+    SpeakerLine: Apa!? Kalau begitu, kita harus laporkan ini sege--
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: 
+    SpeakerLine: -Tiba tiba, saya mendengar suara kresek, seperti suara terbukanya
+      intercom.-
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: ???
+    SpeakerLine: Ha. Sepertinya anda menemukan ruang rahasia saya. Bagaimana rasanya
+      menyelesaikan kasus 'keracunan', hm?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: ???
+    SpeakerLine: Mungkin kau tadi ingin keluar. Tapi kau tak akan bisa. Saya sudah
+      mengunci pintu di belakang kau saat kau sibuk berteriak.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: ???
+    SpeakerLine: Apakah kau tahu bahwa ruangan ini memiliki pengendali temperatur
+      yang sangat canggih? Marilah kita lihat apakah kau menyukainya. Nol derajat,
+      minus sepuluh...
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: ???
+    SpeakerLine: Sayang sekali! Kau hampir menangkapku. Tapi saya bisa tidur tenang,
+      sekarang. Nanti saya ambil tengkorak bekumu dan masukkan ke tong sampah.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: ???
+    SpeakerLine: Bye-bye.
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 0}
+  _nextDialogue: {fileID: 11400000, guid: fd36d4c93b216294e9f1b962c60c2ea4, type: 2}
+  _flagType: 1
+  _flagIndex: 24

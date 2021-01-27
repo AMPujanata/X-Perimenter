@@ -17,15 +17,15 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: Selamat siang.
-    lineSFX: {fileID: 8300000, guid: c8e749ad6b52eca44ba0ba98e3ce41d4, type: 3}
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Penghuni 205
     SpeakerLine: Siang... ada apa?
-    lineSFX: {fileID: 8300000, guid: e9a3403005d72bc4282c00e40d72388d, type: 3}
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: Saya dari badan detektif cabang kota <nama kota>. Apakah anda teman
-      dari <nama pasien>?
+    SpeakerLine: Saya dari badan detektif cabang kota Kanaria. Apakah anda teman
+      dari Dimas?
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Penghuni 205
@@ -33,7 +33,7 @@ MonoBehaviour:
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: Apa ada hal yang anda ketahui tentang <nama pasien>?
+    SpeakerLine: Apa ada hal yang anda ketahui tentang Dimas?
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Penghuni 205
@@ -42,8 +42,8 @@ MonoBehaviour:
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Penghuni 205
-    SpeakerLine: Tiga hari yang lalu, pacarnya <nama pasien> data ke sini secara
-      sembunyi. Saat hari itu, pas ulang tahunnya <nama pasien>.
+    SpeakerLine: Tiga hari yang lalu, pacarnya Dimas datang ke sini secara sembunyi.
+      Saat hari itu, pas ulang tahunnya Dimas.
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Penghuni 205

@@ -38,6 +38,7 @@ public class GeneralGameManager : MonoBehaviour
         _gameUICanvasWasActive = true;
         _player = FindObjectOfType<PlayerBehavior>();
         _camera = FindObjectOfType<CameraController>();
+        ObjectiveManager _objectiveManager = FindObjectOfType<ObjectiveManager>();
         //code for loading game here from playerprefs
         if(PlayerPrefs.GetInt("ShouldLoadData", 0) == 1)
         {
@@ -46,7 +47,10 @@ public class GeneralGameManager : MonoBehaviour
             saveManager.LoadGame();
         }
         else
+        {
             _startOfLevelEvent.Invoke();
+            _objectiveManager.SetCurrentObjective(0);
+        }
     }
 
     public void ToggleGameUI(bool validity)
@@ -126,6 +130,15 @@ public class GeneralGameManager : MonoBehaviour
     public void TeleportPlayerHere(Transform teleportPointTransform)
     {
         StartCoroutine(TeleportPlayerHereProcess(teleportPointTransform));
+    }
+
+    public void TeleportPlayerHereWithoutFade(Transform teleportPointTransform)
+    {
+        TeleportPoint teleportPoint = teleportPointTransform.gameObject.GetComponent<TeleportPoint>();
+        _player.transform.position = teleportPointTransform.position;
+        _player.SetDirection(teleportPoint.GetDirection());
+        _player.SetBounds(teleportPoint.GetBound());
+        _camera.SetBounds(teleportPoint.GetBound());
     }
 
     public IEnumerator FadeInProcess()

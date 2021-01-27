@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: 2ndCashierSecondTellReason
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: 
+    SpeakerLine: -Saya mendekati penjaga kasir, dan menurunkan suara saya.-
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Saya di sini sendang menginvestigasi kasus keracunan. Dia masuk
+      ke dalam rumah sakit dua hari setelah makan di sini.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Balik lagi ke pertanyaan saya. Apakah anda sudah lama bekerja di
+      sini?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penjaga Kasir
+    SpeakerLine: ...hm. Apakah ibu sibuk pada malam hari? Tolong bertemu dengan saya
+      lagi pada malam hari, di restoran ini.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penjaga Kasir
+    SpeakerLine: Untuk sekarang, tolong berpura-pura anda tidak mendengar apapun
+      dari saya.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penjaga Kasir
+    SpeakerLine: Ini nomor HP saya. Saya berikan ini ke anda sebagai bukti kepercayaan.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: ...Baiklah, kalau begitu. Sampai jumpa di malam hari.
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 0}
+  _nextDialogue: {fileID: 0}
+  _flagType: 2
+  _flagIndex: 4

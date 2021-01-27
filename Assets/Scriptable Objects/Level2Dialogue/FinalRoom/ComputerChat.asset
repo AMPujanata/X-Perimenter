@@ -20,20 +20,20 @@ MonoBehaviour:
       pada ulang tahunnya...</i>)
     lineSFX: {fileID: 0}
   - _dontEditThis: 
-    SpeakerName: <nama pacar>
+    SpeakerName: Nina
     SpeakerLine: '"sayang, udah makan belum kue yg gw kasih?"'
     lineSFX: {fileID: 0}
   - _dontEditThis: 
-    SpeakerName: <nama pasien>
+    SpeakerName: Dimas
     SpeakerLine: '"Udah dong. Gw belum makan semuanya sih, tapi rasanya menarik.
       Makasih udah bikin buat ulang tahun gw."'
     lineSFX: {fileID: 0}
   - _dontEditThis: 
-    SpeakerName: <nama pacar>
+    SpeakerName: Nina
     SpeakerLine: '"wah, bagus deh. yaudah, semangat ya kerjanya! love u!"'
     lineSFX: {fileID: 0}
   - _dontEditThis: 
-    SpeakerName: <nama pasien>
+    SpeakerName: Dimas
     SpeakerLine: '"Makasih. Semoga kamu sukses juga ya, kerjanya."'
     lineSFX: {fileID: 0}
   - _dontEditThis: 

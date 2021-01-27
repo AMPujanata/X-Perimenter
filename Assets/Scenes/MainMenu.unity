@@ -212,7 +212,7 @@ MonoBehaviour:
   m_fontSizeMin: 1
   m_fontSizeMax: 10
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -628,7 +628,7 @@ MonoBehaviour:
   m_fontSizeMin: 1
   m_fontSizeMax: 10
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -867,7 +867,7 @@ MonoBehaviour:
   m_fontSizeMin: 1
   m_fontSizeMax: 10
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1105,7 +1105,7 @@ RectTransform:
   m_Father: {fileID: 1740375217}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.63336384}
+  m_AnchorMin: {x: 0, y: 0.80246913}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -1312,7 +1312,7 @@ MonoBehaviour:
   m_fontSizeMin: 1
   m_fontSizeMax: 10
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2114,8 +2114,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Level 2 dan seterusnya masih dalam development. Terima kasih telah memainkan
-    game kami!
+  m_text: Level 3 masih dalam development. Terima kasih telah memainkan game kami!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d22e0681d9a98e4d817d97aa87b0276, type: 2}
   m_sharedMaterial: {fileID: 6187170582168910958, guid: 2d22e0681d9a98e4d817d97aa87b0276,
@@ -2510,7 +2509,7 @@ MonoBehaviour:
   m_fontSizeMin: 1
   m_fontSizeMax: 10
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2644,7 +2643,7 @@ MonoBehaviour:
   m_fontSizeMin: 1
   m_fontSizeMax: 10
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2778,7 +2777,7 @@ MonoBehaviour:
   m_fontSizeMin: 1
   m_fontSizeMax: 10
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3096,7 +3095,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 536554754}
-        m_MethodName: SetupGlosarium
+        m_MethodName: DisplayGlosarium
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3423,7 +3422,7 @@ MonoBehaviour:
   m_fontSizeMin: 1
   m_fontSizeMax: 10
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3861,6 +3860,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996319002}
   m_CullTransparentMesh: 0
+--- !u!1 &1002346950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1002346951}
+  - component: {fileID: 1002346953}
+  - component: {fileID: 1002346952}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1002346951
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002346950}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.4999999, y: 1.4999999, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1907671624}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 85, y: 40}
+  m_SizeDelta: {x: 89, y: 33}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1002346952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002346950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0c67b37804aae3d4a9e452fb1c845153, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1002346953
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002346950}
+  m_CullTransparentMesh: 0
 --- !u!1 &1056268706
 GameObject:
   m_ObjectHideFlags: 0
@@ -3952,7 +4025,7 @@ MonoBehaviour:
   m_fontSizeMin: 1
   m_fontSizeMax: 10
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -4224,6 +4297,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 536554752}
+        m_MethodName: LoadLevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level3
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1088640688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4243,7 +4327,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eade4422ddc9ffe40ba35dfbeb30246a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 85acc26acfe0941458622ed462916bb2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4343,7 +4427,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 423541346}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.36663613
+  m_Size: 0.19753087
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4480,26 +4564,15 @@ MonoBehaviour:
           m_StringArgument: Level2
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 912496079}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 536554752}
+        m_MethodName: LoadLevel
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1537390522}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Level2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1133275127
@@ -4521,7 +4594,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eade4422ddc9ffe40ba35dfbeb30246a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7d7f3d70e41faec46a4363989f3bfed1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5076,7 +5149,7 @@ MonoBehaviour:
   m_fontSizeMin: 1
   m_fontSizeMax: 10
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -5303,7 +5376,7 @@ MonoBehaviour:
   m_fontSizeMin: 1
   m_fontSizeMax: 10
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -5652,7 +5725,7 @@ MonoBehaviour:
   m_fontSizeMin: 1
   m_fontSizeMax: 10
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -6231,8 +6304,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 35, y: -10}
-  m_SizeDelta: {x: -130, y: -60}
+  m_AnchoredPosition: {x: 35, y: 20}
+  m_SizeDelta: {x: -130, y: -120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1618234296
 MonoBehaviour:
@@ -6849,7 +6922,7 @@ MonoBehaviour:
   m_fontSizeMin: 1
   m_fontSizeMax: 10
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -7069,14 +7142,15 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1002346951}
   m_Father: {fileID: 394450381}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 10, y: 0}
-  m_SizeDelta: {x: -20, y: 818.25}
+  m_SizeDelta: {x: -20, y: 1215}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1907671625
 MonoBehaviour:
@@ -7127,20 +7201,23 @@ MonoBehaviour:
   m_Text: "<size=24>Tim Development</size>\n\nKetua Proyek, Pembuatan Asset\nFera
     Sartika Atan\n\nProgramming, Editor Unity\nAndrew Michael Pujanata\n\nPerancangan
     Cerita, Perancangan Level\nAnandito Baramayasi\n\n<size=24>Asset Luar yang Digunakan</size>\n\n<size=22>Programming</size>\nJoystick
-    Pack oleh Fenerax Studios (Unity Asset Store)\n\n<size=22>Graphics</size>\nCharacters
-    and Environment: Default asset dari RPG Maker XP\n\n<size=22>Music</size>\nContains
+    Pack oleh Fenerax Studios (Unity Asset Store)\n\n<size=22>Music</size>\nContains
     music \xA92020 Joshua McLean (https://joshua-mclean.itch.io)\r \nLicensed under
     Creative Commons Attribution 4.0 International\n(Track yang digunakan: Shadow
     Inside, As The Light Fades)\n\nVillage Ambiance by Alexander Nakarada | https://www.serpentsoundstudios.com\r\nMusic
     promoted by https://www.free-stock-music.com\r\nAttribution 4.0 International
     (CC BY 4.0)\r\nhttps://creativecommons.org/licenses/by/4.0/\n\nMidsommar by Scott
     Buckley | https://soundcloud.com/scottbuckley\r\nMusic promoted by https://www.free-stock-music.com\r\nAttribution
-    4.0 International (CC BY 4.0)\r\nhttps://creativecommons.org/licenses/by/4.0/\n\n<size=22>Sound
+    4.0 International (CC BY 4.0)\r\nhttps://creativecommons.org/licenses/by/4.0/\n\nUnspoken
+    by Myuu | https://soundcloud.com/myuu\r\nMusic promoted by https://www.free-stock-music.com\r\nCreative
+    Commons Attribution 3.0 Unported License\r\nhttps://creativecommons.org/licenses/by/3.0/deed.en_US\n\n<size=22>Sound
     Effects</size>\nClick_1.wav by JonnyRuss01 (www.freesound.org)\nwooden_door_open.wav
     by joedeshon (www.freesound.org)\nBody_Fall_Over.wav by raubana (www.freesound.org)\nDoor
     Unlock by angelkunev (www.freesound.org)\nKnocking Door by dersuperanton (www.freesound.org)\nWalk
     Down Stairs by qubodup (www.freesound.org)\nDoor - Microwave 01 by JarredGibb
-    (www.freesound.org)\ntone beep.wav by pan14 (www.freesound.org)"
+    (www.freesound.org)\ntone beep.wav by pan14 (www.freesound.org)\n\n<size=22>Graphics</size>\nSithjester
+    (http://untamed.wild-refuge.net/rpgxp.php)\r\nPixel Art World (http://yms.main.jp)\nSprite
+    Api (https://lelex-game-and-art-maker.itch.io/fire-animated\r)\nSprite Air: (https://kvsr.itch.io/waterfall-sprite)\n\n\n\n"
 --- !u!222 &1907671627
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7935,7 +8012,7 @@ MonoBehaviour:
   m_fontSizeMin: 1
   m_fontSizeMax: 10
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -8124,6 +8201,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 8300000, guid: 2618fa321915f18468f87eb2903d91f5,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 536554754}
+        m_MethodName: ResetIndex
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

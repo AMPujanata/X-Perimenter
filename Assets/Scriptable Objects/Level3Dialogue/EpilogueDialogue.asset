@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: EpilogueDialogue
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Ibu
+    SpeakerLine: Aku sudah pulang!
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Anak
+    SpeakerLine: Mama! Akhirnya mama pulang... aku kangen sama mama.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Ayah
+    SpeakerLine: Selamat datang, sayang. Bagaimana kerjaannya?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Ibu
+    SpeakerLine: Sudah selesai. Ternyata kasus tentang orang keracunan di restoran
+      itu disebabkan formalin... pantesan makanannya murah. Untung aku nggak makan
+      banyak, tuh. Kalau kamu gimana?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Ayah
+    SpeakerLine: Aku juga baru selesai. Ternyata kasus tentang orang keracunan itu
+      disebabkan Rhodamin B di kue... orang sekarang makannya aneh-aneh, ya? Sampai
+      kue berwarna-warni...
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Ayah
+    SpeakerLine: ...eh, nanti tolong kasih duit tambahan, ya... ternyata aku tadi
+      harus bayarin seseorang untuk mendapatkan informasi...
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Anak
+    SpeakerLine: Aku juga gak kalah, lho! Aku juga nyelesaiin kasus... uh, boraks,
+      kalau gak salah, di bakso ibu temanku... aku nyaris makan, hehe.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Ayah
+    SpeakerLine: Waah. Anak ayah pintar juga, ya. Bangga aku punya anak seperti kamu.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Ibu
+    SpeakerLine: Ya, mungkin sudah saatnya kami tutup, ya? Ayo, marilah...
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Keluarga Detektif
+    SpeakerLine: Bagaimana, pemain? Apakah anda banyak belajar dari pengalaman-pengalaman
+      kami? Semoga menjadi banyak menggali ilmu.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Keluarga Detektif
+    SpeakerLine: Ingatlah, untuk selalu waspada terhadap bahan-bahan kimia yang anda
+      tidak kenal. Waspada terhadap penyalahgunaan bahan kimia.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Keluarga Detektif
+    SpeakerLine: Terima kasih sudah memainkan game kami!
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 0}
+  _nextDialogue: {fileID: 0}
+  _flagType: 1
+  _flagIndex: 28

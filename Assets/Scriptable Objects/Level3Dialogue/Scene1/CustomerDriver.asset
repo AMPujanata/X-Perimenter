@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: CustomerDriver
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Selamat siang. Bolehkah saya menanyakan anda tentang restoran ini?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Supir Ojol
+    SpeakerLine: Tentu saja, bu.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Apakah anda sering makan di sini?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Supir Ojol
+    SpeakerLine: Bisa dibilang sering.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Bagaimana makanan di sini, menurut anda?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Supir Ojol
+    SpeakerLine: Biasa aja sih. Cuman kadang-kadang, makananya kerasa aneh. Emang
+      makanan murah sih, jadi saya tidak acuh.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Hm? Merasa aneh seperti apa?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Supir Ojol
+    SpeakerLine: Ya... aneh aja, gitu. Kadang-kadang mienya terasa seperti nasi.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Apa ada hal lain selain itu?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Supir Ojol
+    SpeakerLine: Kadang setelah makan aku merasa sakit perut. Mending kalau saya
+      tidak makan di sini lagi, tapi... mau gimana? Emang ini satu-satunya restoran
+      yang bisa saya bayar.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Baiklah. Terima kasih atas bantuan anda.
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 0}
+  _nextDialogue: {fileID: 0}
+  _flagType: 2
+  _flagIndex: 2

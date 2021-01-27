@@ -16,8 +16,8 @@ MonoBehaviour:
   Lines:
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: Saya ingin mengetahui lebih lanjut tentang alasan dibawanya <nama
-      pasien> ke rumah sakit. Apakah anda bisa membantu saya mencari petunjuk?
+    SpeakerLine: Saya ingin mengetahui lebih lanjut tentang alasan dibawanya Dimas
+      ke rumah sakit. Apakah anda bisa membantu saya mencari petunjuk?
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Penghuni 203

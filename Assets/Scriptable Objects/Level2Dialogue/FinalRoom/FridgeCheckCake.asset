@@ -26,8 +26,8 @@ MonoBehaviour:
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: (<i>...hm? Sepertinya ada pesan yang masuk di komputer <nama pasien>.
-      Sebaiknya saya coba lihat.</i>)
+    SpeakerLine: (<i>...hm? Sepertinya ada pesan yang masuk di komputer Dimas. Sebaiknya
+      saya coba lihat.</i>)
     lineSFX: {fileID: 8300000, guid: a8563525cb101e344a054d206738cd18, type: 3}
   _nextChoice: {fileID: 0}
   _nextDialogue: {fileID: 0}

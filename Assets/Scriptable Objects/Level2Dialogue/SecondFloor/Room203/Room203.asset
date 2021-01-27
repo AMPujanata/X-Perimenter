@@ -17,15 +17,15 @@ MonoBehaviour:
   - _dontEditThis: 
     SpeakerName: Detektif
     SpeakerLine: Selamat siang.
-    lineSFX: {fileID: 8300000, guid: c8e749ad6b52eca44ba0ba98e3ce41d4, type: 3}
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Penghuni 203
     SpeakerLine: Kamu dari mana? Kok bisa masuk ke sini?
-    lineSFX: {fileID: 8300000, guid: e9a3403005d72bc4282c00e40d72388d, type: 3}
+    lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: Saya dari badan detektif cabang kota <nama kota>. Apakah anda teman
-      dari <nama pasien>?
+    SpeakerLine: Saya dari badan detektif cabang kota Kanaria. Apakah anda teman
+      dari Dimas?
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Penghuni 203

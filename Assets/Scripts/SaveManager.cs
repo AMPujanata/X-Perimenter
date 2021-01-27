@@ -13,7 +13,6 @@ public class SaveData
     public float playerPositionY;
     public float playerPositionZ;
     public bool[] flags;
-    public List<string> notes;
     public int currentObjectiveIndex;
     public float boundUp;
     public float boundDown;
@@ -69,12 +68,12 @@ public class SaveManager : MonoBehaviour
             file.Close();
             Vector3 tempPlayerPosition = new Vector3(_currentSaveData.playerPositionX, _currentSaveData.playerPositionY, _currentSaveData.playerPositionZ);
             _playerBehavior.transform.position = tempPlayerPosition;
+            _objectiveManager.SetCurrentObjective(_currentSaveData.currentObjectiveIndex);
             for (int i = 0; i < _currentSaveData.flags.Length; i++)
             {
                 if (_currentSaveData.flags[i])
                     _flagManager.ActivateFlag(i);
             }
-            _objectiveManager.SetCurrentObjective(_currentSaveData.currentObjectiveIndex);
             _playerBehavior.SetBounds(_currentSaveData.boundLeft, _currentSaveData.boundRight, _currentSaveData.boundUp, _currentSaveData.boundDown);
             _cameraController.SetBounds(_currentSaveData.boundLeft, _currentSaveData.boundRight, _currentSaveData.boundUp, _currentSaveData.boundDown);
         }

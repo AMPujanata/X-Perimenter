@@ -16,8 +16,8 @@ MonoBehaviour:
   Lines:
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: (<i>Lemari ini penuh pakaian <nama pasien>. Semua bajunya terlihat
-      masih bersih. ...Untuk standard mess, setidaknya.</i>)
+    SpeakerLine: (<i>Lemari ini penuh pakaian Dimas. Semua bajunya terlihat masih
+      bersih. ...Untuk standard mess, setidaknya.</i>)
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif

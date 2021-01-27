@@ -20,8 +20,7 @@ MonoBehaviour:
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: Saya ingin menanyakan, apakah di mess ini ada yang namanya <nama
-      pasien>?
+    SpeakerLine: Saya ingin menanyakan, apakah di mess ini ada yang namanya Dimas?
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Satpam
@@ -29,14 +28,14 @@ MonoBehaviour:
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: Oh, maaf. Saya dari badan detektif cabang kota <nama kota>. Saya
-      ingin melakukan penyelidikan tentang pembawaan <nama pasien> ke rumah sakit.
+    SpeakerLine: Oh, maaf. Saya dari badan detektif cabang kota Kanaria. Saya ingin
+      melakukan penyelidikan tentang pembawaan Dimas ke rumah sakit.
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Satpam
-    SpeakerLine: Seperti itu, ya? Maaf, pak. Sebenarnya <nama pasien> ada di ruang
-      nomor 201, tapi atas persetujuan kami, jika yang datang tidak kami kenal maka
-      kami tidak akan memberikan akses.
+    SpeakerLine: Seperti itu, ya? Maaf, pak. Sebenarnya Dimas ada di ruang nomor
+      201, tapi atas persetujuan kami, jika yang datang tidak kami kenal maka kami
+      tidak akan memberikan akses.
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Satpam
@@ -45,9 +44,9 @@ MonoBehaviour:
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Satpam
-    SpeakerLine: <nama pasien> memiliki banyak teman disini, sejauh ingatan saya.
-      Tapi saya tidak ingat siapa saja yang kenal <nama pasien>. Silahkan tanya,
-      tapi jangan sampai saya mendapatkan keluhan.
+    SpeakerLine: Dimas memiliki banyak teman disini, sejauh ingatan saya. Tapi saya
+      tidak ingat siapa saja yang kenal Dimas. Silahkan tanya, tapi jangan sampai
+      saya mendapatkan keluhan.
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif

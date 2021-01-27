@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: BossGetsCaught
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Polisi
+    SpeakerLine: Anda ditangkap untuk penggunaan bahan kimia berbahaya dalam pembuatan
+      makanan. Anda akan dibawa ke kantor polisi untuk penanyaan lanjut.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Bos
+    SpeakerLine: Tunggu, pak! Saya dijebak oleh kedua maling tersebut! Mereka memasukkan
+      bahan-bahan saya ke dalam formalin, dan--
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Polisi
+    SpeakerLine: Iya, iya. Anda bisa katakan semua itu setelah anda sampai kantor
+      polisi. Sekarang, bergegas!
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Polisi
+    SpeakerLine: Deni, tolong buat laporan anda sesegera mungkin. Pastikan anda mencantumkan
+      semua yang telah terjadi.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Deni
+    SpeakerLine: Baik, pak!
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Deni
+    SpeakerLine: ...wew, saya kira hidup saya akan pendam di dalam ruangan itu...
+      Terima kasih, bu. Tanpa anda, kami akan membutuhkan waktu lebih lama lagi untuk
+      memecahkan kasus ini.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Sama-sama. Tanpa anda, saya juga tidak akan bisa memecahkan kasus
+      yang saya ambil... sekarang, saya bisa selesaikan secara sepenuhnya.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Tapi, pertama... saya perlu kembali ke keluarga saya. Mereka pasti
+      sudah bingung saya ke mana sampai larut malam ini...
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 0}
+  _nextDialogue: {fileID: 11400000, guid: 6d7cb874c28f2364d9a307410624b79e, type: 2}
+  _flagType: 1
+  _flagIndex: 27

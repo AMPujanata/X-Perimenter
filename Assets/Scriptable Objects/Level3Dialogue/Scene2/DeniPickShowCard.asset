@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: DeniPickShowCard
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: 
+    SpeakerLine: -Saya ambil kartu dari dalam dompet saya, yang menunjukkan identifikasi
+      saya sebagai detektif, dan menunjukkannya kepada penjaga kasir.-
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penjaga Kasir
+    SpeakerLine: Hm... ya, sepertinya ini semua benar. Baiklah, artinya aman untuk
+      saya berikan informasi.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Penjaga Kasir
+    SpeakerLine: Perkenalkan, nama saya Deni. Saya sebenarnya juga merupakan detektif
+      dari cabang kantor kota Kanaria. Kebetulan, saya juga menginvestigasi restoran
+      ini.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Deni
+    SpeakerLine: Restoran ini memang terlihat murah, tapi masih bisa untung. Jadi
+      saya penasaran, dan melamar ke sini.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Deni
+    SpeakerLine: Tapi, saya dibutuhkan menuruti janji yang aneh. Yaitu, saya tidak
+      boleh memberi tahu kepada siapapun tentang bahan-bahan yang digunakan untuk
+      resep makanan restoran.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Deni
+    SpeakerLine: Yang lebih membingungkan lagi, saya tidak pernah dikasih tahu apa
+      yang digunakan untuk makanan mereka. Jadi saya penasaran...
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Deni
+    SpeakerLine: ...dan menanyakan rekan-rekan kerja saya. Mereka juga tidak tahu,
+      tapi mereka juga disuruh menuruti janji yang sama.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Deni
+    SpeakerLine: Dan lebih lagi, koki di restoran ini tidak pernah menyiapkan sendiri
+      bahan mereka. Mereka hanya mendapatkan bahan baru, yang sudah ditaruh di dapur
+      oleh atasan.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Deni
+    SpeakerLine: Aneh, bukan? Jadi saya menguping perbincangan dari atasan saat mereka
+      ada meeting. Ternyata, ada pintu di dapur yang terkunci.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Deni
+    SpeakerLine: Saya tidak pernah bisa membuka pintu itu. Tapi saya tahu secara
+      pasti, rahasia di balik makanan murah mereka ada di belakang pintu itu...
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Detektif
+    SpeakerLine: Dan saya bisa membantumu membongkar rahasia tersebut, dan sebagai
+      balas kasih, saya mendapatkan informasi yang saya butuhkan?
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: Deni
+    SpeakerLine: Betul sekali. Kalau ibu mau, kita bisa langsung masuk. Saya memiliki
+      kunci untuk masuk ke restoran.
+    lineSFX: {fileID: 0}
+  - _dontEditThis: 
+    SpeakerName: 
+    SpeakerLine: -Deni membuka pintu tersebut dengan kuncinya, lalu segera masuk.-
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 0}
+  _nextDialogue: {fileID: 0}
+  _flagType: 2
+  _flagIndex: 6

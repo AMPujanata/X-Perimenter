@@ -16,7 +16,7 @@ MonoBehaviour:
   Lines:
   - _dontEditThis: 
     SpeakerName: Detektif
-    SpeakerLine: (<i>...Ah, ini dia. Kunci yang disimpan dia...</i>)
+    SpeakerLine: (<i>...Ah, ini dia. Kunci yang disimpan...</i>)
     lineSFX: {fileID: 0}
   - _dontEditThis: 
     SpeakerName: Detektif

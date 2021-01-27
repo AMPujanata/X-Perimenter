@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580b02a90722b194786691c1e5383ce2, type: 3}
+  m_Name: DeniInitial
+  m_EditorClassIdentifier: 
+  DialogueName: 
+  Lines:
+  - _dontEditThis: 
+    SpeakerName: Penjaga Kasir
+    SpeakerLine: 'Selamat malam, bu. Saya langsung saja: Apakah ibu memiliki tanda
+      yang menunjukkan bahwa anda benar sebuah detektif? Bolehkah saya lihat?'
+    lineSFX: {fileID: 0}
+  _nextChoice: {fileID: 11400000, guid: ffc44ab8b4187f545a313f5ae1a77e5c, type: 2}
+  _nextDialogue: {fileID: 0}
+  _flagType: 0
+  _flagIndex: 0
