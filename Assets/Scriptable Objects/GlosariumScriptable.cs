@@ -15,4 +15,5 @@ public class GlosariumScriptable : ScriptableObject
     public string ShortenedChemicalName;
     [TextArea] public string[] Effects;
     public int AssociatedLevelNumber;
+    [TextArea] public string FoodSigns;
 }

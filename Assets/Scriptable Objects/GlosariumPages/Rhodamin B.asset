@@ -37,3 +37,5 @@ MonoBehaviour:
   - <color=red>Urin berwarna merah</color>
   - <color=red>Gangguan fisiologis tubuh</color>
   AssociatedLevelNumber: 2
+  FoodSigns: Warna makanan terlihat cerah (warna-warni), Bau makanan tidak alami,
+    terdapat rasa pahit ketika dicicipi, tenggorokan gatal setelah konsumsi.

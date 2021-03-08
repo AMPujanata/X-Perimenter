@@ -36,3 +36,6 @@ MonoBehaviour:
   - <color=red>Demam dan sakit kepala</color>
   - <color=red>Gangguan sistem saraf pusat</color>
   AssociatedLevelNumber: 1
+  FoodSigns: Bentuk dan tektsur makanan yang lebih kenyal dan padat, memiliki bau
+    yang menyengat atau mencurigakan, makanan tidak rusak setelah tiga hari di temperatur
+    ruangan.

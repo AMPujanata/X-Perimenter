@@ -12,6 +12,8 @@ public class GlosariumManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _wrongUsesText;
     [SerializeField] private TextMeshProUGUI _effectsCategoryText;
     [SerializeField] private TextMeshProUGUI[] _effectsText;
+    [SerializeField] private TextMeshProUGUI _signsCategoryText;
+    [SerializeField] private TextMeshProUGUI _signsText;
 	[SerializeField] private Button _glosariumButton;
 	[SerializeField] private GameObject _lockedGlosarium;
     [SerializeField] private GameObject _glosariumPrevButton;
@@ -58,8 +60,8 @@ public class GlosariumManager : MonoBehaviour
         if(PlayerPrefs.GetInt("ShouldOpenGlosarium", 0) >= 1)
         {
             _glosariumIndex = PlayerPrefs.GetInt("ShouldOpenGlosarium") - 1;
-            _glosariumButton.onClick.Invoke();
             PlayerPrefs.SetInt("ShouldOpenGlosarium", 0);
+            _glosariumButton.onClick.Invoke();
         }
     }
 
@@ -85,7 +87,7 @@ public class GlosariumManager : MonoBehaviour
         }
 
         _wrongUsesText.text = _currentGlosarium.WrongUse;
-        _effectsCategoryText.text = "<color=blue>Dampak " + _currentGlosarium.ShortenedChemicalName + " Pada Kesehatan</color>";
+        _effectsCategoryText.text = "<color=blue>Dampak " + _currentGlosarium.ShortenedChemicalName + " Pada Kesehatan:</color>";
 
         for(int i = 0; i < _currentGlosarium.Effects.Length; i++)
         {
@@ -93,6 +95,9 @@ public class GlosariumManager : MonoBehaviour
                 break;
             _effectsText[i].text = "- " + _currentGlosarium.Effects[i];
         }
+
+        _signsCategoryText.text = "<color=blue>Ciri-Ciri Makanan Yang Mengandung " + _currentGlosarium.ShortenedChemicalName + ":</color>";
+        _signsText.text = _currentGlosarium.FoodSigns;
 
         int levelToUnlock = _currentGlosarium.AssociatedLevelNumber + 1;
         PlayerPrefs.SetInt("IsLevel" + levelToUnlock + "Unlocked", 1);
